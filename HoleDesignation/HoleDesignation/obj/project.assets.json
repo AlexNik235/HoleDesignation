@@ -1,0 +1,215 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Autodesk.Revit.SDK/2022.0.2.392": {
+        "type": "package",
+        "compile": {
+          "ref/net48/AdWindows.dll": {},
+          "ref/net48/RevitAPI.dll": {},
+          "ref/net48/RevitAPIBrowserUtils.dll": {},
+          "ref/net48/RevitAPIFoundation.dll": {},
+          "ref/net48/RevitAPIIFC.dll": {},
+          "ref/net48/RevitAPILink.dll": {},
+          "ref/net48/RevitAPIMacros.dll": {},
+          "ref/net48/RevitAPIMacrosInterop.dll": {},
+          "ref/net48/RevitAPIMacrosInteropAPI.dll": {},
+          "ref/net48/RevitAPISteel.dll": {},
+          "ref/net48/RevitAPIUI.dll": {},
+          "ref/net48/RevitAPIUILink.dll": {},
+          "ref/net48/RevitAPIUIMacros.dll": {},
+          "ref/net48/RevitAPIUIMacrosInterop.dll": {},
+          "ref/net48/RevitAPIUIMacrosInteropAPI.dll": {},
+          "ref/net48/RevitAddInUtility.dll": {},
+          "ref/net48/RevitDB.dll": {},
+          "ref/net48/RevitDBAPI.dll": {},
+          "ref/net48/RevitNET.dll": {},
+          "ref/net48/RevitUI.dll": {},
+          "ref/net48/RevitUIAPI.dll": {}
+        }
+      },
+      "CSharpFunctionalExtensions/2.29.0": {
+        "type": "package",
+        "compile": {
+          "lib/net472/CSharpFunctionalExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/CSharpFunctionalExtensions.dll": {}
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "Autodesk.Revit.SDK/2022.0.2.392": {
+      "sha512": "/0I7QoCC2xHkVA5jUHqnq9shb7bkqzH75VhvbVmGP7YofNvEZK3fILwXzaik1Dk5NRc9VIhEAmmmwnFRFxjigQ==",
+      "type": "package",
+      "path": "autodesk.revit.sdk/2022.0.2.392",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "Revit.png",
+        "autodesk.revit.sdk.2022.0.2.392.nupkg.sha512",
+        "autodesk.revit.sdk.nuspec",
+        "ref/net48/AdWindows.dll",
+        "ref/net48/RevitAPI.dll",
+        "ref/net48/RevitAPI.xml",
+        "ref/net48/RevitAPIBrowserUtils.dll",
+        "ref/net48/RevitAPIFoundation.dll",
+        "ref/net48/RevitAPIIFC.dll",
+        "ref/net48/RevitAPIIFC.xml",
+        "ref/net48/RevitAPILink.dll",
+        "ref/net48/RevitAPIMacros.dll",
+        "ref/net48/RevitAPIMacros.xml",
+        "ref/net48/RevitAPIMacrosInterop.dll",
+        "ref/net48/RevitAPIMacrosInteropAPI.dll",
+        "ref/net48/RevitAPISteel.dll",
+        "ref/net48/RevitAPIUI.dll",
+        "ref/net48/RevitAPIUI.xml",
+        "ref/net48/RevitAPIUILink.dll",
+        "ref/net48/RevitAPIUIMacros.dll",
+        "ref/net48/RevitAPIUIMacros.xml",
+        "ref/net48/RevitAPIUIMacrosInterop.dll",
+        "ref/net48/RevitAPIUIMacrosInteropAPI.dll",
+        "ref/net48/RevitAddInUtility.dll",
+        "ref/net48/RevitAddInUtility.xml",
+        "ref/net48/RevitDB.dll",
+        "ref/net48/RevitDBAPI.dll",
+        "ref/net48/RevitNET.dll",
+        "ref/net48/RevitUI.dll",
+        "ref/net48/RevitUIAPI.dll"
+      ]
+    },
+    "CSharpFunctionalExtensions/2.29.0": {
+      "sha512": "W3GuMXGMUpi9N7gng5MTgAIQDolfmKHzrvBUMtYtzmUwayVDGJfyIVvNFGz6pftGjQjKrVY7rgkL6YOWb0j1kA==",
+      "type": "package",
+      "path": "csharpfunctionalextensions/2.29.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csharpfunctionalextensions.2.29.0.nupkg.sha512",
+        "csharpfunctionalextensions.nuspec",
+        "lib/net40/CSharpFunctionalExtensions.dll",
+        "lib/net40/CSharpFunctionalExtensions.pdb",
+        "lib/net40/CSharpFunctionalExtensions.xml",
+        "lib/net45/CSharpFunctionalExtensions.dll",
+        "lib/net45/CSharpFunctionalExtensions.pdb",
+        "lib/net45/CSharpFunctionalExtensions.xml",
+        "lib/net461/CSharpFunctionalExtensions.dll",
+        "lib/net461/CSharpFunctionalExtensions.pdb",
+        "lib/net461/CSharpFunctionalExtensions.xml",
+        "lib/net472/CSharpFunctionalExtensions.dll",
+        "lib/net472/CSharpFunctionalExtensions.pdb",
+        "lib/net472/CSharpFunctionalExtensions.xml",
+        "lib/net5.0/CSharpFunctionalExtensions.dll",
+        "lib/net5.0/CSharpFunctionalExtensions.pdb",
+        "lib/net5.0/CSharpFunctionalExtensions.xml",
+        "lib/net6.0/CSharpFunctionalExtensions.dll",
+        "lib/net6.0/CSharpFunctionalExtensions.pdb",
+        "lib/net6.0/CSharpFunctionalExtensions.xml",
+        "lib/netstandard2.0/CSharpFunctionalExtensions.dll",
+        "lib/netstandard2.0/CSharpFunctionalExtensions.pdb",
+        "lib/netstandard2.0/CSharpFunctionalExtensions.xml"
+      ]
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "sha512": "Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "type": "package",
+      "path": "stylecop.analyzers/1.1.118",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
+        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
+        "stylecop.analyzers.1.1.118.nupkg.sha512",
+        "stylecop.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Autodesk.Revit.SDK >= 2022.0.2.392",
+      "CSharpFunctionalExtensions >= 2.29.0",
+      "StyleCop.Analyzers >= 1.1.118"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Undea\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+      "projectName": "HoleDesignation",
+      "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+      "packagesPath": "C:\\Users\\Undea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Undea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\locaNugets": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "Autodesk.Revit.SDK": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[2022.0.2.392, )"
+          },
+          "CSharpFunctionalExtensions": {
+            "target": "Package",
+            "version": "[2.29.0, )"
+          },
+          "StyleCop.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.1.118, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

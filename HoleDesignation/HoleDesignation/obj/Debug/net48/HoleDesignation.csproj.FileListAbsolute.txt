@@ -1,0 +1,26 @@
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_6ce94a78-ed70-406b-8ffd-dd1d5eb5e9d2\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_6ce94a78-ed70-406b-8ffd-dd1d5eb5e9d2\bin\HoleDesignation.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_f66315cd-4852-416c-9e8f-c1f3dba3ee04\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_f66315cd-4852-416c-9e8f-c1f3dba3ee04\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_70ee11da-01f8-4626-9393-e72b0eedadda\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_70ee11da-01f8-4626-9393-e72b0eedadda\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_069aa6be-6a50-44b1-a313-c533f5b3e620\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_069aa6be-6a50-44b1-a313-c533f5b3e620\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_79763fc4-e92b-46cd-beb0-542d716c94b3\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_79763fc4-e92b-46cd-beb0-542d716c94b3\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_5cba1629-532d-458a-bfca-22811014ba21\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_5cba1629-532d-458a-bfca-22811014ba21\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_b2646962-8abe-4781-99c6-1ed455619bc4\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_b2646962-8abe-4781-99c6-1ed455619bc4\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_932dfe02-b57b-48d3-ab56-03f3d59bdcaa\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_932dfe02-b57b-48d3-ab56-03f3d59bdcaa\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\HoleDesignation.pdb

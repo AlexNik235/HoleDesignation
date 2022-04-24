@@ -1,0 +1,5 @@
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\2019\net47\HoleDesignation.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\2019\net47\HoleDesignation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\2019\net47\HoleDesignation.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\2019\net47\HoleDesignation.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\2019\net47\HoleDesignation.csproj.CoreCompileInputs.cache
