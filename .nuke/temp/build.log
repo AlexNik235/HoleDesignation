@@ -1,187 +1,101 @@
-15:09:37.094 | V |                      | HandleShellCompletion.OnBuildCreated (200)
-15:09:38.157 | V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
-15:09:38.177 | V |                      | Passing value for RevitBuild.Solution (HoleDesignation.sln)
-15:09:38.218 | V |                      | InjectParameterValues.OnBuildCreated (100)
-15:09:38.290 | V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
-15:09:38.291 | V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
-15:09:38.338 | V |                      | UpdateNotification.OnBuildCreated (10)
-15:09:38.338 | V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
-15:09:38.339 | V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
-15:09:38.341 | V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
-15:09:38.364 | V |                      | HandleHelpRequests.OnBuildInitialized (5)
-15:09:38.365 | V |                      | CheckBuildProjectConfigurations.OnBuildInitialized (0)
-15:09:38.781 | W |                      | Solution C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation.sln has an active build configuration for C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\build\_build.csproj
-15:09:38.830 | V |                      | Telemetry.OnBuildInitialized (0)
-15:09:40.353 | V |                      | Sending BuildStarted telemetry event ...
-15:09:40.357 | V |                      |   build_components         = 
-15:09:40.357 | V |                      |   build_type               = Project
-15:09:40.358 | V |                      |   compile_time             = 11
-15:09:40.358 | V |                      |   config_generators        = 
-15:09:40.358 | V |                      |   host                     = VisualStudio
-15:09:40.358 | V |                      |   num_custom_components    = 0
-15:09:40.358 | V |                      |   num_custom_extensions    = 0
-15:09:40.358 | V |                      |   num_partitioned_targets  = 0
-15:09:40.358 | V |                      |   num_secrets              = 0
-15:09:40.358 | V |                      |   num_targets              = 12
-15:09:40.358 | V |                      |   os_architecture          = X64
-15:09:40.358 | V |                      |   os_platform              = Windows
-15:09:40.358 | V |                      |   target_framework         = .NETCoreApp,Version=v6.0
-15:09:40.358 | V |                      |   version_dotnet_sdk       = 6.0.202
-15:09:40.358 | V |                      |   version_nuke_common      = 6.0.2
-15:09:40.358 | V |                      |   version_nuke_global_tool = 6.0.2
-15:09:40.934 | V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
-15:09:40.935 | V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
-15:09:45.944 | V | Clean                | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:45.947 | V | Clean                | Telemetry.OnTargetSucceeded (0)
-15:09:45.948 | V | Clean                | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:45.951 | V | Restore              | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:46.031 | I | Restore              | > "C:\Program Files\dotnet\dotnet.exe" restore "C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation.sln"
-15:09:46.794 | D | Restore              |   Определение проектов для восстановления...
-15:09:47.009 | D | Restore              |   Все проекты обновлены для восстановления.
-15:09:47.044 | V | Restore              | Telemetry.OnTargetSucceeded (0)
-15:09:47.177 | V | Restore              | Sending TargetSucceeded telemetry event ...
-15:09:47.177 | V | Restore              |   build_components         = 
-15:09:47.177 | V | Restore              |   build_type               = Project
-15:09:47.177 | V | Restore              |   compile_time             = 17
-15:09:47.177 | V | Restore              |   config_generators        = 
-15:09:47.177 | V | Restore              |   host                     = VisualStudio
-15:09:47.177 | V | Restore              |   num_custom_components    = 0
-15:09:47.177 | V | Restore              |   num_custom_extensions    = 0
-15:09:47.177 | V | Restore              |   num_partitioned_targets  = 0
-15:09:47.177 | V | Restore              |   num_secrets              = 0
-15:09:47.177 | V | Restore              |   num_targets              = 12
-15:09:47.177 | V | Restore              |   os_architecture          = X64
-15:09:47.177 | V | Restore              |   os_platform              = Windows
-15:09:47.177 | V | Restore              |   target_current_partition = 1
-15:09:47.177 | V | Restore              |   target_duration          = 1
-15:09:47.177 | V | Restore              |   target_framework         = .NETCoreApp,Version=v6.0
-15:09:47.177 | V | Restore              |   target_name              = Restore
-15:09:47.177 | V | Restore              |   target_total_partitions  = 1
-15:09:47.177 | V | Restore              |   version_dotnet_sdk       = 6.0.202
-15:09:47.177 | V | Restore              |   version_nuke_common      = 6.0.2
-15:09:47.177 | V | Restore              |   version_nuke_global_tool = 6.0.2
-15:09:47.288 | V | Restore              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:47.292 | V | CompileToTemp        | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:47.298 | I | CompileToTemp        | > "C:\Program Files\dotnet\dotnet.exe" build "C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj" --configuration Debug --output C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin
-15:09:47.493 | D | CompileToTemp        | Microsoft (R) Build Engine версии 17.1.1+a02f73656 для .NET
-15:09:47.494 | D | CompileToTemp        | (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
-15:09:47.494 | D | CompileToTemp        | 
-15:09:48.014 | D | CompileToTemp        |   Определение проектов для восстановления...
-15:09:48.261 | D | CompileToTemp        |   Все проекты обновлены для восстановления.
-15:09:50.427 | W | CompileToTemp        | C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\Cmd.cs(1,1): warning SA1633: The file header is missing or not located at the top of the file. [C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
-15:09:50.428 | W | CompileToTemp        | CSC : warning SA0001: XML comment analysis is disabled due to project configuration [C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
-15:09:50.446 | D | CompileToTemp        |   HoleDesignation -> C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\HoleDesignation.dll
-15:09:50.462 | D | CompileToTemp        | 
-15:09:50.463 | D | CompileToTemp        | Сборка успешно завершена.
-15:09:50.464 | D | CompileToTemp        | 
-15:09:50.466 | W | CompileToTemp        | C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\Cmd.cs(1,1): warning SA1633: The file header is missing or not located at the top of the file. [C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
-15:09:50.467 | W | CompileToTemp        | CSC : warning SA0001: XML comment analysis is disabled due to project configuration [C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
-15:09:50.468 | D | CompileToTemp        |     Предупреждений: 2
-15:09:50.468 | D | CompileToTemp        |     Ошибок: 0
-15:09:50.469 | D | CompileToTemp        | 
-15:09:50.469 | D | CompileToTemp        | Прошло времени 00:00:02.90
-15:09:50.510 | V | CompileToTemp        | Telemetry.OnTargetSucceeded (0)
-15:09:50.510 | V | CompileToTemp        | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:50.515 | V | GenerateAdditionalFi | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:52.367 | V | GenerateAdditionalFi | Telemetry.OnTargetSucceeded (0)
-15:09:52.367 | V | GenerateAdditionalFi | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:52.372 | V | GeneratePackageConte | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:52.373 | V | GeneratePackageConte | Telemetry.OnTargetSucceeded (0)
-15:09:52.373 | V | GeneratePackageConte | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:52.378 | V | SignAssemblies       | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:52.379 | V | SignAssemblies       | Telemetry.OnTargetSucceeded (0)
-15:09:52.379 | V | SignAssemblies       | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:52.388 | V | InstallWixTools      | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:52.470 | V | InstallWixTools      | Telemetry.OnTargetSucceeded (0)
-15:09:52.470 | V | InstallWixTools      | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
-15:09:52.473 | V | BuildMsi             | EventInvoker.OnTargetRunning (-3.4028235E+38)
-15:09:52.776 | I | BuildMsi             | > C:\Users\Undea\.dotnet\tools\rxbim.msi.builder.exe -p HoleDesignation -j HoleDesignation -i %AppDataFolder%/Autodesk/Revit/Addins/2022 -b C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba -s C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin -m C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba -d 2022 -g 41670a3b-f468-42a2-96de-5103d4f339e7 -u 97ea6ffd-9308-4023-9311-7f7085779cd2 -v 1.0.0.1650802191 -o C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\out -f HoleDesignation -a False
-15:09:52.778 | I | BuildMsi             | @ C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\out
-15:09:53.643 | D | BuildMsi             |     ____       ____  _              __  ___     _    ____        _ __    __         
-15:09:53.644 | D | BuildMsi             |    / __ \_  __/ __ )(_)___ ___     /  |/  /____(_)  / __ )__  __(_) /___/ /__  _____
-15:09:53.645 | D | BuildMsi             |   / /_/ / |/_/ __  / / __ `__ \   / /|_/ / ___/ /  / __  / / / / / / __  / _ \/ ___/
-15:09:53.647 | D | BuildMsi             |  / _, _/>  </ /_/ / / / / / / /  / /  / (__  ) /  / /_/ / /_/ / / / /_/ /  __/ /    
-15:09:53.648 | D | BuildMsi             | /_/ |_/_/|_/_____/_/_/ /_/ /_/  /_/  /_/____/_/  /_____/\__,_/_/_/\__,_/\___/_/     
-15:09:53.650 | D | BuildMsi             |                                                                                     
-15:09:53.651 | D | BuildMsi             | 
-15:09:55.554 | D | BuildMsi             | <- Packing managed CA:
-15:09:55.555 | D | BuildMsi             | C:\ProgramData\WixBin\Wix_bin\sdk\MakeSfxCA.exe "C:\Users\Undea\OneDrive\Рабочий\RxBim.MsiBuilder.CA.dll" "C:\ProgramData\WixBin\Wix_bin\sdk\x86\sfxca.dll" "C:\Users\Undea\.dotnet\tools\.store\rxbim.msibuilder.globaltool\1.0.3\rxbim.msibuilder.globaltool\1.0.3\tools\net5.0\any\RxBim.MsiBuilder.dll" "C:\Users\Undea\OneDrive\Рабочий\CustomAction.config" "C:\Users\Undea\.dotnet\tools\.store\rxbim.msibuilder.globaltool\1.0.3\rxbim.msibuilder.globaltool\1.0.3\tools\net5.0\any\RxBim.MsiBuilder.pdb" "C:\Users\Undea\.dotnet\tools\.store\rxbim.msibuilder.globaltool\1.0.3\rxbim.msibuilder.globaltool\1.0.3\tools\net5.0\any\WixSharp.dll"  "C:\ProgramData\WixBin\Wix_bin\sdk\Microsoft.Deployment.WindowsInstaller.dll"
-15:09:55.555 | D | BuildMsi             | ->
-15:09:55.745 | D | BuildMsi             | Searching for custom action entry points in RxBim.MsiBuilder.dll
-15:09:55.860 | D | BuildMsi             |     Loaded dependent assembly: C:\ProgramData\WixBin\Wix_bin\sdk\Microsoft.Deployment.WindowsInstaller.dll
-15:09:55.861 | D | BuildMsi             |     InstallFonts=RxBim.MsiBuilder!RxBim.MsiBuilder.CustomActions.InstallFonts
-15:09:55.862 | D | BuildMsi             | Searching for an embedded UI class in RxBim.MsiBuilder.dll
-15:09:55.866 | D | BuildMsi             | Modifying SfxCA.dll stub
-15:09:56.031 | D | BuildMsi             | Copying file version info from C:\Users\Undea\.dotnet\tools\.store\rxbim.msibuilder.globaltool\1.0.3\rxbim.msibuilder.globaltool\1.0.3\tools\net5.0\any\RxBim.MsiBuilder.dll to C:\Users\Undea\OneDrive\����稩\RxBim.MsiBuilder.CA.dll
-15:09:56.171 | D | BuildMsi             | Packaging files
-15:09:56.199 | D | BuildMsi             |     RxBim.MsiBuilder.dll
-15:09:56.203 | D | BuildMsi             |     CustomAction.config
-15:09:56.204 | D | BuildMsi             |     RxBim.MsiBuilder.pdb
-15:09:56.205 | D | BuildMsi             |     WixSharp.dll
-15:09:56.405 | D | BuildMsi             |     Microsoft.Deployment.WindowsInstaller.dll
-15:09:56.787 | D | BuildMsi             | MakeSfxCA finished: C:\Users\Undea\OneDrive\����稩\RxBim.MsiBuilder.CA.dll
-15:09:57.325 | D | BuildMsi             | <- Packing managed CA:
-15:09:57.326 | D | BuildMsi             | C:\ProgramData\WixBin\Wix_bin\sdk\MakeSfxCA.exe "C:\Users\Undea\OneDrive\Рабочий\WixSharp.CA.dll" "C:\ProgramData\WixBin\Wix_bin\sdk\x86\sfxca.dll" "C:\Users\Undea\.dotnet\tools\.store\rxbim.msibuilder.globaltool\1.0.3\rxbim.msibuilder.globaltool\1.0.3\tools\net5.0\any\WixSharp.dll" "C:\Users\Undea\OneDrive\Рабочий\CustomAction.config"   "C:\ProgramData\WixBin\Wix_bin\sdk\Microsoft.Deployment.WindowsInstaller.dll"
-15:09:57.327 | D | BuildMsi             | ->
-15:09:57.426 | D | BuildMsi             | Searching for custom action entry points in WixSharp.dll
-15:09:57.440 | D | BuildMsi             |     Loaded dependent assembly: C:\ProgramData\WixBin\Wix_bin\sdk\Microsoft.Deployment.WindowsInstaller.dll
-15:09:57.446 | D | BuildMsi             |     Loaded dependent assembly: C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
-15:09:57.452 | D | BuildMsi             |     Loaded dependent assembly: C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
-15:09:57.458 | D | BuildMsi             |     Loaded dependent assembly: C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
-15:09:57.460 | D | BuildMsi             |     WixSharp_SetPackageName_Action=WixSharp!WixSharp.ResilientPackage.WixSharp_SetPackageName_Action
-15:09:57.462 | D | BuildMsi             |     WixSharp_RemoveResilientPackage_Action=WixSharp!WixSharp.ResilientPackage.WixSharp_RemoveResilientPackage_Action
-15:09:57.462 | D | BuildMsi             |     WixSharp_CreateResilientPackage_Action=WixSharp!WixSharp.ResilientPackage.WixSharp_CreateResilientPackage_Action
-15:09:57.463 | D | BuildMsi             |     WixSharp_EnableUninstallFullUI_Action=WixSharp!WixSharp.UninstallFullUI.WixSharp_EnableUninstallFullUI_Action
-15:09:57.463 | D | BuildMsi             |     WixSharp_InitRuntime_Action=WixSharp!WixSharp.ManagedProjectActions.WixSharp_InitRuntime_Action
-15:09:57.464 | D | BuildMsi             |     WixSharp_Load_Action=WixSharp!WixSharp.ManagedProjectActions.WixSharp_Load_Action
-15:09:57.464 | D | BuildMsi             |     WixSharp_BeforeInstall_Action=WixSharp!WixSharp.ManagedProjectActions.WixSharp_BeforeInstall_Action
-15:09:57.465 | D | BuildMsi             |     WixSharp_AfterInstall_Action=WixSharp!WixSharp.ManagedProjectActions.WixSharp_AfterInstall_Action
-15:09:57.465 | D | BuildMsi             |     CancelRequestHandler=WixSharp!WixSharp.ManagedProjectActions.CancelRequestHandler
-15:09:57.466 | D | BuildMsi             | Searching for an embedded UI class in WixSharp.dll
-15:09:57.470 | D | BuildMsi             | Modifying SfxCA.dll stub
-15:09:57.549 | D | BuildMsi             | Copying file version info from C:\Users\Undea\.dotnet\tools\.store\rxbim.msibuilder.globaltool\1.0.3\rxbim.msibuilder.globaltool\1.0.3\tools\net5.0\any\WixSharp.dll to C:\Users\Undea\OneDrive\����稩\WixSharp.CA.dll
-15:09:57.620 | D | BuildMsi             | Packaging files
-15:09:57.646 | D | BuildMsi             |     WixSharp.dll
-15:09:57.817 | D | BuildMsi             |     CustomAction.config
-15:09:57.818 | D | BuildMsi             |     Microsoft.Deployment.WindowsInstaller.dll
-15:09:58.212 | D | BuildMsi             | MakeSfxCA finished: C:\Users\Undea\OneDrive\����稩\WixSharp.CA.dll
-15:09:58.289 | D | BuildMsi             | 
-15:09:58.291 | D | BuildMsi             | ----------------------------------------------------------
-15:09:58.292 | D | BuildMsi             | 
-15:09:58.294 | D | BuildMsi             | Wix project file has been built: C:\Users\Undea\OneDrive\Рабочий\HoleDesignation_1.0.0.1650802191.wxs
-15:09:58.295 | D | BuildMsi             | 
-15:09:58.295 | D | BuildMsi             | <- Compiling
-15:09:58.296 | D | BuildMsi             | C:\ProgramData\WixBin\Wix_bin\bin\candle.exe -sw1026    "C:\Users\Undea\OneDrive\Рабочий\HoleDesignation_1.0.0.1650802191.wxs"  -out "C:\Users\Undea\OneDrive\Рабочий\HoleDesignation_1.0.0.1650802191.wixobj"
-15:09:58.297 | D | BuildMsi             | ->
-15:09:58.857 | D | BuildMsi             | Windows Installer XML Toolset Compiler version 3.11.2.4516
-15:09:58.857 | D | BuildMsi             | Copyright (c) .NET Foundation and contributors. All rights reserved.
-15:09:58.858 | D | BuildMsi             | 
-15:09:58.897 | D | BuildMsi             | HoleDesignation_1.0.0.1650802191.wxs
-15:09:59.031 | D | BuildMsi             | <- Linking
-15:09:59.032 | D | BuildMsi             | C:\ProgramData\WixBin\Wix_bin\bin\light.exe -sw1076 -sw1079   -b "C:\Users\Undea\OneDrive\Рабочий" "C:\Users\Undea\OneDrive\Рабочий\HoleDesignation_1.0.0.1650802191.wixobj"  -out "C:\Users\Undea\OneDrive\Рабочий\HoleDesignation_1.0.0.1650802191.msi" -cultures:"en-US"
-15:09:59.032 | D | BuildMsi             | ->
-15:09:59.293 | D | BuildMsi             | Windows Installer XML Toolset Linker version 3.11.2.4516
-15:09:59.295 | D | BuildMsi             | Copyright (c) .NET Foundation and contributors. All rights reserved.
-15:09:59.297 | D | BuildMsi             | 
-15:10:03.184 | D | BuildMsi             | C:\Users\Undea\AppData\Local\Temp\bwy0v05v\HoleDesignation_1.0.0.1650802191.msi : error LGHT0204 : ICE39: Bad Type in Summary Information Stream for PID_SUBJECT.
-15:10:06.668 | D | BuildMsi             | 
-15:10:06.668 | D | BuildMsi             | ----------------------------------------------------------
-15:10:06.669 | D | BuildMsi             | 
-15:10:06.669 | D | BuildMsi             | MSI file has been built: C:\Users\Undea\OneDrive\Рабочий\HoleDesignation_1.0.0.1650802191.msi
-15:10:06.671 | D | BuildMsi             | 
-15:10:06.672 | D | BuildMsi             |  ProductName: HoleDesignation
-15:10:06.672 | D | BuildMsi             |  Version    : 1.0.0.1650802191
-15:10:06.673 | D | BuildMsi             |  ProductId  : {41670a3b-f468-42a2-96de-5103e4f347f7}
-15:10:06.673 | D | BuildMsi             |  UpgradeCode: {97ea6ffd-9308-4023-9311-7f7085779cd2}
-15:10:06.674 | D | BuildMsi             | 
-15:10:06.674 | D | BuildMsi             |  Auto-generated InstallDir ID:
-15:10:06.675 | D | BuildMsi             |    INSTALLDIR=%AppDataFolder%\Autodesk\Revit\Addins\2022
-15:10:06.697 | I | BuildMsi             | Deleting directory C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba...
-15:10:06.699 | V | BuildMsi             | Deleting file C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\HoleDesignation.addin...
-15:10:06.699 | V | BuildMsi             | Deleting file C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\CSharpFunctionalExtensions.dll...
-15:10:06.700 | V | BuildMsi             | Deleting file C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\HoleDesignation.dll...
-15:10:06.700 | V | BuildMsi             | Deleting file C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\HoleDesignation.pdb...
-15:10:06.701 | V | BuildMsi             | Deleting directory C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin...
-15:10:06.701 | V | BuildMsi             | Deleting directory C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba...
-15:10:06.702 | V | BuildMsi             | Telemetry.OnTargetSucceeded (0)
-15:10:06.702 | V | BuildMsi             | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+09:13:51.681 | V |                      | HandleShellCompletion.OnBuildCreated (200)
+09:13:52.582 | V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+09:13:52.601 | V |                      | Passing value for RevitBuild.Solution (HoleDesignation.sln)
+09:13:52.638 | V |                      | InjectParameterValues.OnBuildCreated (100)
+09:13:52.705 | V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+09:13:52.706 | V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+09:13:52.740 | V |                      | UpdateNotification.OnBuildCreated (10)
+09:13:52.740 | V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+09:13:52.741 | V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+09:13:52.742 | V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+09:13:52.765 | V |                      | HandleHelpRequests.OnBuildInitialized (5)
+09:13:52.766 | V |                      | CheckBuildProjectConfigurations.OnBuildInitialized (0)
+09:13:53.161 | W |                      | Solution C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation.sln has an active build configuration for C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\build\_build.csproj
+09:13:53.236 | V |                      | Telemetry.OnBuildInitialized (0)
+09:13:54.279 | V |                      | Sending BuildStarted telemetry event ...
+09:13:54.283 | V |                      |   build_components         = 
+09:13:54.283 | V |                      |   build_type               = Project
+09:13:54.283 | V |                      |   compile_time             = 9
+09:13:54.283 | V |                      |   config_generators        = 
+09:13:54.283 | V |                      |   host                     = Rider
+09:13:54.283 | V |                      |   num_custom_components    = 0
+09:13:54.283 | V |                      |   num_custom_extensions    = 0
+09:13:54.283 | V |                      |   num_partitioned_targets  = 0
+09:13:54.283 | V |                      |   num_secrets              = 0
+09:13:54.283 | V |                      |   num_targets              = 12
+09:13:54.283 | V |                      |   os_architecture          = X64
+09:13:54.283 | V |                      |   os_platform              = Windows
+09:13:54.283 | V |                      |   repo_branch              = main
+09:13:54.283 | V |                      |   repo_commit              = e51050
+09:13:54.283 | V |                      |   repo_provider            = GitHub
+09:13:54.283 | V |                      |   repo_url                 = 8f9401
+09:13:54.283 | V |                      |   target_framework         = .NETCoreApp,Version=v6.0
+09:13:54.283 | V |                      |   version_dotnet_sdk       = 6.0.202
+09:13:54.283 | V |                      |   version_nuke_common      = 6.0.2
+09:13:54.283 | V |                      |   version_nuke_global_tool = 6.0.2
+09:13:54.837 | V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+09:13:54.838 | V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+09:14:00.292 | V | Clean                | EventInvoker.OnTargetRunning (-3.4028235E+38)
+09:14:00.294 | V | Clean                | Telemetry.OnTargetSucceeded (0)
+09:14:00.294 | V | Clean                | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+09:14:00.298 | V | Restore              | EventInvoker.OnTargetRunning (-3.4028235E+38)
+09:14:00.373 | I | Restore              | > "C:\Program Files\dotnet\dotnet.exe" restore "C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation.sln"
+09:14:01.343 | D | Restore              |   Определение проектов для восстановления...
+09:14:01.779 | D | Restore              |   Восстановлен C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj (за 178 ms).
+09:14:01.780 | D | Restore              |   Восстановлен C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\GENPRO_Design.csproj (за 178 ms).
+09:14:01.810 | V | Restore              | Telemetry.OnTargetSucceeded (0)
+09:14:01.942 | V | Restore              | Sending TargetSucceeded telemetry event ...
+09:14:01.943 | V | Restore              |   build_components         = 
+09:14:01.943 | V | Restore              |   build_type               = Project
+09:14:01.943 | V | Restore              |   compile_time             = 17
+09:14:01.943 | V | Restore              |   config_generators        = 
+09:14:01.943 | V | Restore              |   host                     = Rider
+09:14:01.943 | V | Restore              |   num_custom_components    = 0
+09:14:01.943 | V | Restore              |   num_custom_extensions    = 0
+09:14:01.943 | V | Restore              |   num_partitioned_targets  = 0
+09:14:01.943 | V | Restore              |   num_secrets              = 0
+09:14:01.943 | V | Restore              |   num_targets              = 12
+09:14:01.943 | V | Restore              |   os_architecture          = X64
+09:14:01.943 | V | Restore              |   os_platform              = Windows
+09:14:01.943 | V | Restore              |   repo_branch              = main
+09:14:01.943 | V | Restore              |   repo_commit              = e51050
+09:14:01.943 | V | Restore              |   repo_provider            = GitHub
+09:14:01.943 | V | Restore              |   repo_url                 = 8f9401
+09:14:01.943 | V | Restore              |   target_current_partition = 1
+09:14:01.943 | V | Restore              |   target_duration          = 2
+09:14:01.943 | V | Restore              |   target_framework         = .NETCoreApp,Version=v6.0
+09:14:01.943 | V | Restore              |   target_name              = Restore
+09:14:01.943 | V | Restore              |   target_total_partitions  = 1
+09:14:01.943 | V | Restore              |   version_dotnet_sdk       = 6.0.202
+09:14:01.943 | V | Restore              |   version_nuke_common      = 6.0.2
+09:14:01.943 | V | Restore              |   version_nuke_global_tool = 6.0.2
+09:14:03.403 | V | Restore              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+09:14:03.406 | V | CompileToTemp        | EventInvoker.OnTargetRunning (-3.4028235E+38)
+09:14:03.412 | I | CompileToTemp        | > "C:\Program Files\dotnet\dotnet.exe" build "C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj" --configuration Debug --output C:\Users\Undea\AppData\Local\Temp\RxBim_build_3596ee17-c9eb-4831-8def-23fdd36ae522\bin
+09:14:03.578 | D | CompileToTemp        | Microsoft (R) Build Engine версии 17.1.1+a02f73656 для .NET
+09:14:03.579 | D | CompileToTemp        | (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+09:14:03.580 | D | CompileToTemp        | 
+09:14:04.082 | D | CompileToTemp        |   Определение проектов для восстановления...
+09:14:04.344 | D | CompileToTemp        |   Все проекты обновлены для восстановления.
+09:14:04.754 | E | CompileToTemp        | C:\Program Files\dotnet\sdk\6.0.202\Microsoft.Common.CurrentVersion.targets(3261,5): error MSB3822: для ресурсов, не являющихся строковыми, во время выполнения требуется сборка System.Resources.Extensions, однако она не была найдена в ссылках этого проекта. [C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\GENPRO_Design.csproj]
+09:14:04.762 | D | CompileToTemp        | 
+09:14:04.763 | D | CompileToTemp        | Ошибка сборки.
+09:14:04.763 | D | CompileToTemp        | 
+09:14:04.764 | E | CompileToTemp        | C:\Program Files\dotnet\sdk\6.0.202\Microsoft.Common.CurrentVersion.targets(3261,5): error MSB3822: для ресурсов, не являющихся строковыми, во время выполнения требуется сборка System.Resources.Extensions, однако она не была найдена в ссылках этого проекта. [C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\GENPRO_Design.csproj]
+09:14:04.765 | D | CompileToTemp        |     Предупреждений: 0
+09:14:04.767 | D | CompileToTemp        |     Ошибок: 1
+09:14:04.768 | D | CompileToTemp        | 
+09:14:04.769 | D | CompileToTemp        | Прошло времени 00:00:01.13
+09:14:04.810 | E | CompileToTemp        | Running target CompileToTemp failed
+Nuke.Common.Tooling.ProcessException: Process 'dotnet.exe' exited with code 1.
+   > "C:\Program Files\dotnet\dotnet.exe" build "C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj" --configuration Debug --output C:\Users\Undea\AppData\Local\Temp\RxBim_build_3596ee17-c9eb-4831-8def-23fdd36ae522\bin
+   @ C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation
+
+   at Nuke.Common.Tooling.ProcessExtensions.AssertZeroExitCode(IProcess process)
+   at Nuke.Common.Tools.DotNet.DotNetTasks.DotNetBuild(DotNetBuildSettings toolSettings)
+   at Nuke.Common.Tools.DotNet.DotNetTasks.DotNetBuild(Configure`1 configurator)
+   at RevitBuild.<get_CompileToTemp>b__53_2()
+   at Nuke.Common.Execution.BuildExecutor.<>c.<Execute>b__4_2(Action x)
+   at Nuke.Common.Utilities.Collections.EnumerableExtensions.ForEach[T](IEnumerable`1 enumerable, Action`1 action)
+   at Nuke.Common.Execution.BuildExecutor.Execute(NukeBuild build, ExecutableTarget target, IReadOnlyCollection`1 previouslyExecutedTargets, Boolean failureMode)
+09:14:04.902 | V | CompileToTemp        | EventInvoker.OnTargetFailed (-3.4028235E+38)

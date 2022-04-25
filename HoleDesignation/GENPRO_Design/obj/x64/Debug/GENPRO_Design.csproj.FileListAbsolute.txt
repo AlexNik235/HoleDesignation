@@ -1,0 +1,9 @@
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.AssemblyReference.cache
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GenproDesignDictionary.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\CommonInfoWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\CreateNameWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\GenproProgressBarWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\QuestionWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\RenameWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.cache
+D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.lref

@@ -1,0 +1,62 @@
+D:\Dev\genpro\GENPRO_Design\bin\R2020\GENPRO_Design.dll
+D:\Dev\genpro\GENPRO_Design\bin\R2020\GENPRO_Design.pdb
+D:\Dev\genpro\GENPRO_Design\bin\R2020\MaterialDesignColors.dll
+D:\Dev\genpro\GENPRO_Design\bin\R2020\MaterialDesignColors.pdb
+D:\Dev\genpro\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.dll
+D:\Dev\genpro\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.pdb
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GenproDesignDictionary.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\CommonInfoWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\CreateNameWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\GenproProgressBarWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\QuestionWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\RenameWindow.g.cs
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design_MarkupCompile.cache
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design_MarkupCompile.lref
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\CommonInfoWindow.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\CreateNameWindow.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\GenproProgressBarWindow.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\QuestionWindow.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\RenameWindow.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.g.resources
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.Properties.GenproResource.resources
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.GenerateResource.cache
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.CoreCompileInputs.cache
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.CopyComplete
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.dll
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\GENPRO_Design.pdb
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\InputWindow.baml
+D:\Dev\genpro\GENPRO_Design\obj\x64\R2020\DialogWindow\InputWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\GENPRO_Design.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\GENPRO_Design.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignColors.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignColors.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\InputWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GenproDesignDictionary.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\CommonInfoWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\CreateNameWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\GenproProgressBarWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\InputWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\QuestionWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\RenameWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design_MarkupCompile.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design_MarkupCompile.lref
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\CommonInfoWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\CreateNameWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\GenproProgressBarWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\QuestionWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\DialogWindow\RenameWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.g.resources
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.Properties.GenproResource.resources
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.GenerateResource.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\R2020\GENPRO_Design.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\System.Buffers.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\System.Memory.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\System.Numerics.Vectors.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\System.Resources.Extensions.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\System.Runtime.CompilerServices.Unsafe.dll

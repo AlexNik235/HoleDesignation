@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "0KItgGFCbGgIvE2Y3eutzE2sbE46UOc8DoPRmRfXSknZnhw7530ikRvgE9FwM+ANkiF3TcfG6w9IPj3hpxuUpQ==",
+  "dgSpecHash": "e/3tB0ThMrjl+Uqb4PqTAzYVQs5zNC1wV4JP4z4u8v3LHLvf/LskXX1ly5TGKBPesVSCqqWlYgoVBs8ELMdh9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Undea\\.nuget\\packages\\autodesk.revit.sdk\\2022.0.2.392\\autodesk.revit.sdk.2022.0.2.392.nupkg.sha512",
     "C:\\Users\\Undea\\.nuget\\packages\\csharpfunctionalextensions\\2.29.0\\csharpfunctionalextensions.2.29.0.nupkg.sha512",
-    "C:\\Users\\Undea\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+    "C:\\Users\\Undea\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\system.resources.extensions\\6.0.0\\system.resources.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

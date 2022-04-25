@@ -6,6 +6,7 @@
     <AssemblyName>$(RootNamespace)</AssemblyName>
     <Configurations>Debug;2017;2018;2019;2020;2021;2022</Configurations>
 	<CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
     <Platforms>x64</Platforms>
   </PropertyGroup>
 	
@@ -77,6 +78,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GENPRO_Design\GENPRO_Design.csproj" />
   </ItemGroup>
   <PropertyGroup>
     <PackageGuid>41670a3b-f468-42a2-96de-5103d4f339e7</PackageGuid>

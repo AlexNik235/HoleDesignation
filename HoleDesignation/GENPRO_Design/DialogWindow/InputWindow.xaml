@@ -1,0 +1,44 @@
+﻿<Window x:Class="GENPRO_Design.DialogWindow.InputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+
+        WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource GenproWindowStyle}"
+        MinWidth="300"
+        MinHeight="100">
+
+    <Window.Resources>
+        <ResourceDictionary Source="pack://application:,,,/GENPRO_Design;component/GenproDesignDictionary.xaml" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ContentControl Template="{StaticResource GenproWindowHeader}" />
+        <Button Style="{StaticResource GenproButtonClose}"
+                Click="ButtonBase_OnClick" />
+
+        <Grid Grid.Row="1" Margin="20" MaxWidth="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <TextBlock x:Name="MainText" TextWrapping="Wrap" Text="Введите новое значение для параметра" FontSize="16"></TextBlock>
+            <TextBox Grid.Row="1" x:Name="InputValue" TextChanged="InputValue_OnTextChanged"
+                     Margin="0 10 0 10"></TextBox>
+            <Button Grid.Row="2" Style="{StaticResource GenproButtonMain}"
+                    x:Name="ButtonApprove" Click="ButtonApprove_OnClick">
+                Подтвердить
+            </Button>
+        </Grid>
+    </Grid>
+
+</Window>

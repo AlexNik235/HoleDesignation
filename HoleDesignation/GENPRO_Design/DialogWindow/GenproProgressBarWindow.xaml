@@ -1,0 +1,67 @@
+﻿<Window x:Class="GENPRO_Design.DialogWindow.GenproProgressBarWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GENPRO_Design.DialogWindow"
+             mc:Ignorable="d" 
+             Height="auto" Width="400"
+             WindowStartupLocation="CenterScreen"
+             MouseLeftButtonDown="Window_MouseLeftButtonDown"
+             Title="Процесс выполения"
+             Style="{DynamicResource GenproWindowStyle}">
+
+    <Window.Resources>
+        <ResourceDictionary Source="pack://application:,,,/GENPRO_Design;component/GenproDesignDictionary.xaml"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ContentControl Template ="{StaticResource GenproWindowHeader}"/>
+        <Grid Grid.Row="1">
+            <ProgressBar 
+                    Grid.Row="1" 
+                    x:Name="progressBar"             
+                    Background="LightGray"
+                    Foreground="Gray"
+                    VerticalAlignment="Center"             
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"                     
+                    Margin="5"           
+                    Height="25"
+                    Width="385">
+            </ProgressBar>
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       x:Name="TextBlockProgressBar">  
+            </TextBlock>
+        </Grid>                   
+        <TextBlock 
+            Grid.Row="2"
+            x:Name="messageLbl" 
+            Margin="5" 
+            Width="385" 
+            TextWrapping="Wrap"            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="11"
+            Text="Подождите пожалуйста..."
+            FontStyle="Italic"
+            Background="White"
+            Foreground="DimGray"></TextBlock>
+        <Button 
+            x:Name="ButtonCancel"
+            Grid.Row="3" 
+            Margin="5,5,10,10"            
+            FontSize="11" Width="80" Height="25" 
+            Click="ButtonCancel_Click"
+            HorizontalAlignment="Right">
+            Отмена            
+        </Button>
+    </Grid>
+</Window>

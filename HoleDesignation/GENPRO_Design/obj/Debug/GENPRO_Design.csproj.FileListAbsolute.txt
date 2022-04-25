@@ -1,0 +1,3 @@
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\Debug\GENPRO_Design.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\Debug\GENPRO_Design.Properties.GenproResource.resources
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\Debug\GENPRO_Design.csproj.GenerateResource.cache
