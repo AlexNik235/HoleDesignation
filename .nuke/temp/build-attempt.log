@@ -1,9 +1,8 @@
-af180ff48c021f8fb14be969bb4b7aca
+ad728a848b261df743205c33002040a6
 Clean
 Restore
 CompileToTemp
 GenerateAdditionalFiles
 GeneratePackageContentsFile
 SignAssemblies
-InstallWixTools
-BuildMsi
+BuildInnoExe

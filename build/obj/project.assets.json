@@ -474,23 +474,6 @@
           "lib/netstandard2.0/Octokit.dll": {}
         }
       },
-      "RevitBuildProject/1.0.1": {
-        "type": "package",
-        "dependencies": {
-          "CommandLineParser": "2.8.0",
-          "InnoSetup.ScriptBuilder": "1.2.1",
-          "Nuke.Common": "6.0.2",
-          "SharpCompress": "0.31.0",
-          "System.Drawing.Common": "6.0.0",
-          "Tools.InnoSetup": "6.2.1"
-        },
-        "compile": {
-          "lib/net6.0/RevitBuildProject.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/RevitBuildProject.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -2159,6 +2142,24 @@
         "runtime": {
           "lib/netstandard2.1/YamlDotNet.dll": {}
         }
+      },
+      "RevitBuildProject/1.0.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CommandLineParser": "2.8.0",
+          "InnoSetup.ScriptBuilder": "1.2.1",
+          "Nuke.Common": "6.0.2",
+          "SharpCompress": "0.31.0",
+          "System.Drawing.Common": "6.0.0",
+          "Tools.InnoSetup": "6.2.1"
+        },
+        "compile": {
+          "bin/placeholder/RevitBuildProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RevitBuildProject.dll": {}
+        }
       }
     }
   },
@@ -2981,18 +2982,6 @@
         "octokit.0.50.0.nupkg.sha512",
         "octokit.nuspec",
         "octokit.png"
-      ]
-    },
-    "RevitBuildProject/1.0.1": {
-      "sha512": "0103xv2/yZ60eN8aQdhmYowCEl0aeuiiSxJH5Vie9lRscJNnM8xGJm4He60x4bMUEij+CzKPZmiO76iBVYYiOQ==",
-      "type": "package",
-      "path": "revitbuildproject/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net6.0/RevitBuildProject.dll",
-        "lib/net6.0/RevitBuildProject.xml",
-        "revitbuildproject.1.0.1.nupkg.sha512",
-        "revitbuildproject.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -7494,31 +7483,37 @@
         "yamldotnet.11.2.1.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "RevitBuildProject/1.0.2": {
+      "type": "project",
+      "path": "../HoleDesignation/RevitNuke/RevitBuildProject/RevitBuildProject.csproj",
+      "msbuildProject": "../HoleDesignation/RevitNuke/RevitBuildProject/RevitBuildProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "RevitBuildProject >= 1.0.1"
+      "RevitBuildProject >= 1.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Undea\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\_build.csproj",
+      "projectUniqueName": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\build\\_build.csproj",
       "projectName": "_build",
-      "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\_build.csproj",
-      "packagesPath": "C:\\Users\\Undea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\obj\\",
+      "projectPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\build\\_build.csproj",
+      "packagesPath": "C:\\Users\\nikitenkoaa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\build\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Undea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikitenkoaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7526,13 +7521,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\locaNugets": {},
+        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\RevitNuke\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\RevitNuke\\RevitBuildProject\\RevitBuildProject.csproj": {
+              "projectPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\RevitNuke\\RevitBuildProject\\RevitBuildProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -7544,12 +7543,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "RevitBuildProject": {
-            "target": "Package",
-            "version": "[1.0.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -7565,7 +7558,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

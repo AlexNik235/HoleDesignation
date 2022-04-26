@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RevitBuildProject" Version="1.0.1" />
+    <ProjectReference Include="..\HoleDesignation\RevitNuke\RevitBuildProject\RevitBuildProject.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "_build/1.0.0": {
         "dependencies": {
-          "RevitBuildProject": "1.0.1"
+          "RevitBuildProject": "1.0.2"
         },
         "runtime": {
           "_build.dll": {}
@@ -390,22 +390,6 @@
           "lib/netstandard2.0/Octokit.dll": {
             "assemblyVersion": "0.50.0.0",
             "fileVersion": "0.50.0.0"
-          }
-        }
-      },
-      "RevitBuildProject/1.0.1": {
-        "dependencies": {
-          "CommandLineParser": "2.8.0",
-          "InnoSetup.ScriptBuilder": "1.2.1",
-          "Nuke.Common": "6.0.2",
-          "SharpCompress": "0.31.0",
-          "System.Drawing.Common": "6.0.0",
-          "Tools.InnoSetup": "6.2.1"
-        },
-        "runtime": {
-          "lib/net6.0/RevitBuildProject.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -1337,6 +1321,19 @@
             "fileVersion": "11.2.1.0"
           }
         }
+      },
+      "RevitBuildProject/1.0.2": {
+        "dependencies": {
+          "CommandLineParser": "2.8.0",
+          "InnoSetup.ScriptBuilder": "1.2.1",
+          "Nuke.Common": "6.0.2",
+          "SharpCompress": "0.31.0",
+          "System.Drawing.Common": "6.0.0",
+          "Tools.InnoSetup": "6.2.1"
+        },
+        "runtime": {
+          "RevitBuildProject.dll": {}
+        }
       }
     }
   },
@@ -1555,13 +1552,6 @@
       "sha512": "sha512-J5vqespSvjxIAAtjG1Tc6ghBqyfRgDJtKnk/ifi4N0hD/f3JbPwyEDRT+Eelu/bS4C4M6mu5gt1WJqar+fByzg==",
       "path": "octokit/0.50.0",
       "hashPath": "octokit.0.50.0.nupkg.sha512"
-    },
-    "RevitBuildProject/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0103xv2/yZ60eN8aQdhmYowCEl0aeuiiSxJH5Vie9lRscJNnM8xGJm4He60x4bMUEij+CzKPZmiO76iBVYYiOQ==",
-      "path": "revitbuildproject/1.0.1",
-      "hashPath": "revitbuildproject.1.0.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -2311,6 +2301,11 @@
       "sha512": "sha512-tBt8K+korVfrjH9wyDEhiLKxbs8qoLCLIFwvYgkSUuMC9//w3z0cFQ8LQAI/5MCKq+BMil0cfRTRvPeE7eXhQw==",
       "path": "yamldotnet/11.2.1",
       "hashPath": "yamldotnet.11.2.1.nupkg.sha512"
+    },
+    "RevitBuildProject/1.0.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

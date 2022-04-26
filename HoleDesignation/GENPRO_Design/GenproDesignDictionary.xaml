@@ -166,11 +166,6 @@
                    Source="pack://application:,,,/GENPRO_Design;component/Resources/genpro_logo_white_full.png"
                    RenderOptions.BitmapScalingMode="HighQuality" />
             
-            <Button Grid.Column="1"                          
-                    Command="Minimize"                    
-                    Style="{StaticResource GenproButtonMinimize}">
-                
-            </Button>
             <Button Grid.Column="2"
                     Command="Close"                    
                     Margin="0,0,10,0"

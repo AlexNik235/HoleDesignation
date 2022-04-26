@@ -3,8 +3,8 @@
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
+    using ClassLibrary1.DialogWindow;
     using CSharpFunctionalExtensions;
-    using GENPRO_Design.DialogWindow;
     using Services;
     using Result = Autodesk.Revit.UI.Result;
 
@@ -37,12 +37,12 @@
                         var resultMessage = "Работа плагина завершена.";
                         if (!string.IsNullOrEmpty(res))
                             resultMessage += res;
-                        GenproWindow.Information($"{resultMessage}");
+                        GenproWindow.Information(resultMessage);
                         return Result.Succeeded;
                     },
                     err =>
                     {
-                        GenproWindow.Error($"{err}");
+                        GenproWindow.Error(err);
                         return Result.Failed;
                     });
         }

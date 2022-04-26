@@ -80,7 +80,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GENPRO_Design\GENPRO_Design.csproj" />
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
   </ItemGroup>
   <PropertyGroup>
     <PackageGuid>41670a3b-f468-42a2-96de-5103d4f339e7</PackageGuid>

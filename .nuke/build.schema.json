@@ -88,7 +88,6 @@
             "type": "string",
             "enum": [
               "BuildInnoExe",
-              "BuildMsi",
               "Clean",
               "Compile",
               "CompileToTemp",
@@ -97,8 +96,7 @@
               "GenerateProjectProps",
               "InstallWixTools",
               "Restore",
-              "SignAssemblies",
-              "Test"
+              "SignAssemblies"
             ]
           }
         },
@@ -113,7 +111,6 @@
             "type": "string",
             "enum": [
               "BuildInnoExe",
-              "BuildMsi",
               "Clean",
               "Compile",
               "CompileToTemp",
@@ -122,8 +119,7 @@
               "GenerateProjectProps",
               "InstallWixTools",
               "Restore",
-              "SignAssemblies",
-              "Test"
+              "SignAssemblies"
             ]
           }
         },

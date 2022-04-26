@@ -26,3 +26,33 @@ C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_5b90d79a-ad67-4648-a901-9f68cd2d31ba\bin\HoleDesignation.pdb
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_d0b04aab-bcf5-48ff-b028-a4323f6bb67c\bin\HoleDesignation.dll
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_d0b04aab-bcf5-48ff-b028-a4323f6bb67c\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_3f6732a2-41f3-4230-b17d-f82da3235492\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_3f6732a2-41f3-4230-b17d-f82da3235492\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.csproj.AssemblyReference.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.AssemblyInfoInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.AssemblyInfo.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.csproj.CoreCompileInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\Debug\net48\HoleDesignation.csproj.CopyComplete
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_65d5c36a-6b0b-4375-b79a-fa23df152295\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_65d5c36a-6b0b-4375-b79a-fa23df152295\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_e756f700-6b1a-4b19-9406-f3bd5557b7bc\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_e756f700-6b1a-4b19-9406-f3bd5557b7bc\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_6abd1359-8da4-431d-a61c-546e716c018f\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_6abd1359-8da4-431d-a61c-546e716c018f\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_ce6bc6b2-2ce6-4caf-8a29-ed2fdfe3157a\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_ce6bc6b2-2ce6-4caf-8a29-ed2fdfe3157a\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_f6d6b33d-447e-4930-a822-5d259b1dedb6\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_f6d6b33d-447e-4930-a822-5d259b1dedb6\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_4af6d44b-8f9f-447b-81d8-4f0d94a5610c\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_4af6d44b-8f9f-447b-81d8-4f0d94a5610c\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_4eed2f74-ba7f-4a24-8a4f-1baabb2653fa\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_4eed2f74-ba7f-4a24-8a4f-1baabb2653fa\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_393e476e-859b-40bf-b698-d1617d3ef64a\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_393e476e-859b-40bf-b698-d1617d3ef64a\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1a0bd699-3797-4486-8e12-63371407a55d\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1a0bd699-3797-4486-8e12-63371407a55d\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.pdb
