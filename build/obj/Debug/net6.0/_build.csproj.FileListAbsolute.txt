@@ -100,5 +100,3 @@ C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\bui
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\obj\Debug\net6.0\ref\_build.dll
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\obj\Debug\net6.0\_build.pdb
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\obj\Debug\net6.0\_build.genruntimeconfig.cache
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\bin\Debug\net6.0\RevitBuildProject.pdb
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\bin\Debug\net6.0\RevitBuildProject.xml
