@@ -1,0 +1,749 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RevitBuildProject</name>
+    </assembly>
+    <members>
+        <member name="T:AddInGenerator">
+            <summary>
+            The Generator for Revit addin manifest files.
+            </summary>
+        </member>
+        <member name="M:AddInGenerator.GenerateAddInFile(System.String,System.Collections.Generic.IReadOnlyList{Models.ProjectWithAssemblyType},System.String)">
+            <summary>
+            Generate a new addin file.
+            </summary>
+            <param name="rootProjectName">The root project name.</param>
+            <param name="addInTypesPerProjects">Addin types for registration in Revit.</param>
+            <param name="outputDirectory">The output directory path.</param>
+        </member>
+        <member name="T:InnoBuilder">
+            <summary>
+            The Inno Setup builder.
+            </summary>
+        </member>
+        <member name="M:InnoBuilder.Create(Options,Nuke.Common.IO.AbsolutePath,Nuke.Common.IO.AbsolutePath,System.String)">
+            <summary>
+            Creates an instance of <see cref="T:InnoBuilder"/>.
+            </summary>
+            <param name="options">Setup options.</param>
+            <param name="outputProjDir">Output compile project directory.</param>
+            <param name="outputProjBinDir">Output "bin" directory of compile project.</param>
+            <param name="setupFileName">Setup file name.</param>
+        </member>
+        <member name="M:InnoBuilder.AddIcons">
+            <summary>
+            Adds setup and uninstall icons from <see cref="T:Options"/>.
+            </summary>
+        </member>
+        <member name="M:InnoBuilder.AddUninstallScript">
+            <summary>
+            Adds uninstall script.
+            </summary>
+        </member>
+        <member name="M:InnoBuilder.AddFonts">
+            <summary>
+            Adds fonts files.
+            </summary>
+        </member>
+        <member name="M:InnoBuilder.LoadFontFamily(System.IO.Stream)">
+            <summary>
+            Reads Font file as stream, because PrivateFontCollection.Dispose() does not work.
+            </summary>
+            <param name="stream">Font file stream.</param>
+        </member>
+        <member name="T:Builders.WixBuilder`1">
+            <summary>
+            The Wix package builder.
+            </summary>
+        </member>
+        <member name="M:Builders.WixBuilder`1.BuildMsi(Nuke.Common.ProjectModel.Project,System.String,System.String,System.String,System.String)">
+            <summary>
+            Builds MSI.
+            </summary>
+            <param name="project">Selected project.</param>
+            <param name="configuration">Selected configuration.</param>
+            <param name="outputDir">Output directory path.</param>
+            <param name="outputBinDir">Output assemblies directory path.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.GetBuildMsiOptions(Nuke.Common.ProjectModel.Project,System.String,System.String,System.String)">
+            <summary>
+            Gets build MSI options.
+            </summary>
+            <param name="project">Selected Project.</param>
+            <param name="outputDir">Output directory path.</param>
+            <param name="configuration">Selected configuration.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.GenerateAdditionalFiles(System.String,System.Collections.Generic.IEnumerable{Nuke.Common.ProjectModel.Project},System.Collections.Generic.IEnumerable{Models.AssemblyType},System.String)">
+            <summary>
+            Generates additional files.
+            </summary>
+            <param name="rootProjectName">Root project name.</param>
+            <param name="allProject">All projects.</param>
+            <param name="addInTypes">Assembly types.</param>
+            <param name="outputDir">Output directory path.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.GeneratePackageContentsFile(Nuke.Common.ProjectModel.Project,System.String,System.String)">
+            <summary>
+            Generates package contents file.
+            </summary>
+            <param name="project">Selected project.</param>
+            <param name="configuration">Selected configuration.</param>
+            <param name="outputDir">Output directory path.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.NeedGeneratePackageContents(System.String)">
+            <summary>
+            Returns True, if need generate PackageContents.
+            </summary>
+            <param name="configuration">Selected configuration.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.GetDebugInstallDir(Nuke.Common.ProjectModel.Project,System.String)">
+            <summary>
+            Gets Debug configuration install directory.
+            </summary>
+            <param name="project">Selected project.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.GetInstallDir(Nuke.Common.ProjectModel.Project,System.String,System.String)">
+            <summary>
+            Gets installation directory.
+            </summary>
+            <param name="project">Selected project.</param>
+            <param name="configuration">Selected configuration.</param>
+        </member>
+        <member name="M:Builders.WixBuilder`1.GetReleaseInstallDir(Nuke.Common.ProjectModel.Project,System.String)">
+            <summary>
+            Gets Release configuration install directory path.
+            </summary>
+            <param name="project">Selected project.</param>
+        </member>
+        <member name="T:Extensions.AddInExtensions">
+            <summary>
+            Extension methods for <see cref="T:Models.AddIn"/>.
+            </summary>
+        </member>
+        <member name="M:Extensions.AddInExtensions.ToXElement(Models.AddIn)">
+            <summary>
+            Maps an <see cref="T:Models.AddIn"/> to the <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+            <param name="addIn">An addin.</param>
+            <returns>The <see cref="T:System.Xml.Linq.XElement"/> mapped from <paramref name="addIn"/>.</returns>
+        </member>
+        <member name="M:Extensions.AddInExtensions.ToXDocument(Models.RevitAddIns)">
+            <summary>
+            Maps a <see cref="T:Models.RevitAddIns"/> to the <see cref="T:System.Xml.Linq.XDocument"/>.
+            </summary>
+            <param name="revitAddIns">RevitAddIns.</param>
+            <returns>The <see cref="T:System.Xml.Linq.XDocument"/> mapped from <paramref name="revitAddIns"/>.</returns>
+        </member>
+        <member name="T:Extensions.AssemblyTypeExtensions">
+            <summary>
+            The <see cref="T:Models.AssemblyType"/> class extensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.AssemblyTypeExtensions.SignAssemblies(System.Collections.Generic.IEnumerable{Models.AssemblyType},Nuke.Common.IO.AbsolutePath,Nuke.Common.IO.AbsolutePath,System.String,System.String,System.String,System.String)">
+            <summary>
+            Signs assemblies.
+            </summary>
+            <param name="assemblyTypes">Assembly types.</param>
+            <param name="outputDirectory">Output directory path.</param>
+            <param name="cert">Certificate path.</param>
+            <param name="keyContainer">Private key.</param>
+            <param name="csp">CSP containing.</param>
+            <param name="digestAlgorithm">Digest algorithm.</param>
+            <param name="timestampServerUrl">Timestamp server URL.</param>
+        </member>
+        <member name="M:Extensions.AssemblyTypeExtensions.IsPluginType(Models.AssemblyType)">
+            <summary>
+            Is assembly type plugin.
+            </summary>
+            <param name="type">The <see cref="T:Models.AssemblyType"/>.</param>
+        </member>
+        <member name="M:Extensions.AssemblyTypeExtensions.GetPluginTypes(Nuke.Common.IO.AbsolutePath)">
+            <summary>
+            Gets <see cref="T:Models.AssemblyType"/> from build path.
+            </summary>
+            <param name="binPath">Build path.</param>
+        </member>
+        <member name="M:Extensions.AssemblyTypeExtensions.ToPropertyName(Models.AssemblyType)">
+            <summary>
+            Generates <see cref="T:System.String"/> from the <see cref="T:Models.AssemblyType"/>.
+            </summary>
+            <param name="type">The <see cref="T:Models.AssemblyType"/>.</param>
+        </member>
+        <member name="M:Extensions.AssemblyTypeExtensions.ToPropertyName(System.String)">
+            <summary>
+            Maps <see cref="T:System.String"/> csproj property name via replacing all dots to underscore.
+            </summary>
+            <param name="str">The source string.</param>
+        </member>
+        <member name="T:Extensions.ProjectExtensions">
+            <summary>
+            Project extensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.GetSetupOptions(Nuke.Common.ProjectModel.Project,System.String,System.String,System.String)">
+            <summary>
+            Gets setup options.
+            </summary>
+            <param name="project">Project.</param>
+            <param name="installDir">Install directory.</param>
+            <param name="sourceDir">Source build directory.</param>
+            <param name="configuration">Configuration.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.BuildMsiWithTool(Nuke.Common.ProjectModel.Project,System.String,Options)">
+            <summary>
+            Builds Msi.
+            </summary>
+            <param name="project">Project.</param>
+            <param name="toolPath">Build MSI tool path.</param>
+            <param name="options">Options.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.BuildProject(Nuke.Common.ProjectModel.Project,System.String)">
+            <summary>
+            DotNet builds project and returns build path.
+            </summary>
+            <param name="project">Project.</param>
+            <param name="config">Configuration.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.AddPropertiesToProject(Nuke.Common.ProjectModel.Project,System.Collections.Generic.IReadOnlyCollection{System.Xml.Linq.XElement})">
+            <summary>
+            Adds properties to a project.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="properties">Properties via <see cref="T:System.Xml.Linq.XElement"/> collection.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.GenerateInstallationProperties(Nuke.Common.ProjectModel.Project)">
+            <summary>
+            Generates a project properties for installation.
+            </summary>
+            <param name="project">The project.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.GetAssemblyTypes(Nuke.Common.ProjectModel.Project,System.String,Options)">
+            <summary>
+            Gets the <see cref="T:Models.AssemblyType"/> collection from a project.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="output">Output path.</param>
+            <param name="options">Options.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.GetTargetDir(Nuke.Common.ProjectModel.Project)">
+            <summary>
+            Gets the target project directory path.
+            </summary>
+            <param name="project">The project.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.GetTargetPath(Nuke.Common.ProjectModel.Project)">
+            <summary>
+            Gets a project assembly path.
+            </summary>
+            <param name="project">The project.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.ToApplicationPackage(Nuke.Common.ProjectModel.Project,System.Collections.Generic.List{Models.Components})">
+            <summary>
+            Maps the <see cref="T:Nuke.Common.ProjectModel.Project"/> to the <see cref="T:Models.ApplicationPackage"/>.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="components">Components.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.CommitChanges(Nuke.Common.ProjectModel.Project)">
+            <summary>
+            Commits changes to GIT.
+            </summary>
+            <param name="project">The project.</param>
+        </member>
+        <member name="M:Extensions.ProjectExtensions.GetTargetFramework(Nuke.Common.ProjectModel.Project,System.Boolean@)">
+            <summary>
+            Gets target framework name.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="multiple">True if specified TargetFrameworks property.</param>
+        </member>
+        <member name="T:Extensions.SignExtensions">
+            <summary>
+            Extension methods helps add digital sign to files.
+            </summary>
+        </member>
+        <member name="M:Extensions.SignExtensions.SignFiles(System.String[],Nuke.Common.IO.AbsolutePath,System.String,System.String,System.String,System.String)">
+            <summary>
+            Signs files.
+            </summary>
+            <param name="filesPath">Files path.</param>
+            <param name="cert">A certificate path.</param>
+            <param name="keyContainer">The private key of the certificate.</param>
+            <param name="csp">CSP containing.</param>
+            <param name="digestAlgorithm">Digest algorithm.</param>
+            <param name="timestampServerUrl">Timestamp server URL.</param>
+        </member>
+        <member name="M:Extensions.SignExtensions.SignFile(System.String,Nuke.Common.IO.AbsolutePath,System.String,System.String,System.String,System.String)">
+            <summary>
+            Adds digital sign to a file.
+            </summary>
+            <param name="filePath">The file path.</param>
+            <param name="cert">The certificate path.</param>
+            <param name="keyContainer">The private key of the certificate.</param>
+            <param name="csp">CSP containing.</param>
+            <param name="digestAlgorithm">Digest algorithm.</param>
+            <param name="timestampServerUrl">Timestamp server URL.</param>
+        </member>
+        <member name="T:Extensions.StringExtensions">
+            <summary>
+            The <see cref="T:System.String"/> extensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.StringExtensions.ToPluginType(System.String)">
+            <summary>
+            Gets type name of a <see cref="T:Models.PluginType"/>.
+            </summary>
+            <param name="type">The plugin type name.</param>
+        </member>
+        <member name="T:RevitBuildProject.Extensions.EmbeddedResourceExtensions">
+            <summary>
+            Extensions for embedded resources.
+            </summary>
+        </member>
+        <member name="M:RevitBuildProject.Extensions.EmbeddedResourceExtensions.ReadResource(System.String)">
+            <summary>
+            Reads embedded resource as string.
+            </summary>
+            <param name="name">Embedded resource name.</param>
+        </member>
+        <member name="T:Generators.PackageContentsGenerator">
+            <summary>
+            Generator of PackageContents.xml.
+            </summary>
+        </member>
+        <member name="M:Generators.PackageContentsGenerator.Generate(Nuke.Common.ProjectModel.Project,System.String)">
+            <summary>
+            Generates PackageContents.xml file.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="outputDirectory">The output path.</param>
+        </member>
+        <member name="M:Generators.PackageContentsGenerator.GetComponents(Nuke.Common.ProjectModel.Project)">
+            <summary>
+            Gets <see cref="T:Models.Components"/> collection.
+            </summary>
+            <param name="project">The project.</param>
+        </member>
+        <member name="T:Generators.ProjectPropertiesGenerator">
+            <summary>
+            Project properties generator.
+            </summary>
+        </member>
+        <member name="M:Generators.ProjectPropertiesGenerator.GenerateProperties(Nuke.Common.ProjectModel.Project,System.String)">
+            <summary>
+            Generates a project properties.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="config">A configuration.</param>
+        </member>
+        <member name="M:Generators.ProjectPropertiesGenerator.GenerateAdditionalProperties(Nuke.Common.ProjectModel.Project,System.Collections.Generic.IEnumerable{Models.AssemblyType})">
+            <summary>
+            Generates additional projects properties as <see cref="T:System.Xml.Linq.XElement"/> collection.
+            </summary>
+            <param name="project">The project.</param>
+            <param name="pluginTypes">The <see cref="T:Models.AssemblyType"/> collection.</param>
+        </member>
+        <member name="T:Generators.RevitProjectPropertiesGenerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Generators.RevitProjectPropertiesGenerator.GenerateAdditionalProperties(Nuke.Common.ProjectModel.Project,System.Collections.Generic.IEnumerable{Models.AssemblyType})">
+            <inheritdoc />
+        </member>
+        <member name="T:RevitPackageContentsGenerator">
+            <summary>
+            Package contents manifest file generator.
+            </summary>
+        </member>
+        <member name="M:RevitPackageContentsGenerator.GetComponents(Nuke.Common.ProjectModel.Project)">
+            <summary>
+            Generates components enumeration from a <see cref="T:Nuke.Common.ProjectModel.Project"/>.
+            </summary>
+            <param name="project">The project.</param>
+        </member>
+        <member name="T:Helpers.ArgumentHelper">
+            <summary>
+            Contains validation methods.
+            </summary>
+        </member>
+        <member name="M:Helpers.ArgumentHelper.Ensure``1(``0,System.String)">
+            <summary>
+            Проверяет значение, что оно не равно null.
+            </summary>
+            <param name="value">Значение для проверки.</param>
+            <param name="name">The caller argument name.</param>
+            <typeparam name="T">Тип значения</typeparam>
+        </member>
+        <member name="T:Helpers.AssemblyScanner">
+            <summary>
+            An assembly scanner utilities.
+            </summary>
+        </member>
+        <member name="M:Helpers.AssemblyScanner.Scan(System.String)">
+            <summary>
+            Scans an assembly.
+            </summary>
+            <param name="file">The assembly file path.</param>
+        </member>
+        <member name="T:Helpers.WixHelper">
+            <summary>
+            Helper class for setup Wix tools.
+            </summary>
+        </member>
+        <member name="M:Helpers.WixHelper.SetupWixTools">
+            <summary>
+            Installs WixSharp.
+            </summary>
+        </member>
+        <member name="M:Helpers.WixHelper.DownloadWixSharp">
+            <summary>
+            Downloads WixSharp.
+            </summary>
+        </member>
+        <member name="T:Models.AddIn">
+            <summary>
+            Specifies an addin file data.
+            </summary>
+        </member>
+        <member name="M:Models.AddIn.#ctor(System.String,System.String,System.String,System.String,Models.PluginType)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="assembly">The assembly.</param>
+            <param name="addInId">The addin identifier.</param>
+            <param name="fullClassName">Full class name.</param>
+            <param name="type">The plugin type.</param>
+        </member>
+        <member name="P:Models.AddIn.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:Models.AddIn.Assembly">
+            <summary>
+            Assembly.
+            </summary>
+        </member>
+        <member name="P:Models.AddIn.AddInId">
+            <summary>
+            AddInId.
+            </summary>
+        </member>
+        <member name="P:Models.AddIn.FullClassName">
+            <summary>
+            FullClassName.
+            </summary>
+        </member>
+        <member name="P:Models.AddIn.Type">
+            <summary>
+            Type.
+            </summary>
+        </member>
+        <member name="P:Models.AddIn.VendorId">
+            <summary>
+            Vendor id.
+            </summary>
+        </member>
+        <member name="P:Models.AddIn.VendorDescription">
+            <summary>
+            Vendor description.
+            </summary>
+        </member>
+        <member name="T:Models.ApplicationPackage">
+            <summary>
+            Specifies an application package manifest.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.SchemaVersion">
+            <summary>
+            Schema version.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.Name">
+            <summary>
+            Package name.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.AppVersion">
+            <summary>
+            Application version.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.FriendlyVersion">
+            <summary>
+            Friendly version.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.ProductType">
+            <summary>
+            Product type.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.ProductCode">
+            <summary>
+            Product code.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.UpgradeCode">
+            <summary>
+            Upgrade code.
+            </summary>
+        </member>
+        <member name="P:Models.ApplicationPackage.Components">
+            <summary>
+            Components.
+            </summary>
+        </member>
+        <member name="M:Models.ApplicationPackage.ToXElement">
+            <summary>
+            Maps <see cref="T:Models.ApplicationPackage"/> to <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+        </member>
+        <member name="T:Models.AssemblyType">
+            <summary>
+            Specifies the type from an assembly.
+            </summary>
+        </member>
+        <member name="M:Models.AssemblyType.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initialize a new instance of the <see cref="T:Models.AssemblyType"/> class.
+            </summary>
+            <param name="assemblyName">The assembly name.</param>
+            <param name="fullName">The assembly full name.</param>
+            <param name="baseTypeName">The assembly base type name.</param>
+        </member>
+        <member name="P:Models.AssemblyType.AssemblyName">
+            <summary>
+            The assembly name.
+            </summary>
+        </member>
+        <member name="P:Models.AssemblyType.FullName">
+            <summary>
+            The assembly full name.
+            </summary>
+        </member>
+        <member name="P:Models.AssemblyType.BaseTypeName">
+            <summary>
+            The assembly base type name.
+            </summary>
+        </member>
+        <member name="M:Models.AssemblyType.ToString">
+            <inheritdoc />
+        </member>
+        <member name="P:Models.AssemblyType.PluginType">
+            <summary>
+            Тип плагина
+            </summary>
+        </member>
+        <member name="T:Models.Components">
+            <summary>
+            Specifies components of a package manifest.
+            </summary>
+        </member>
+        <member name="P:Models.Components.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:Models.Components.OS">
+            <summary>
+            Operation system.
+            </summary>
+        </member>
+        <member name="P:Models.Components.Platform">
+            <summary>
+            Platform.
+            </summary>
+        </member>
+        <member name="P:Models.Components.SeriesMin">
+            <summary>
+            Minimum platform version.
+            </summary>
+        </member>
+        <member name="P:Models.Components.SeriesMax">
+            <summary>
+            Maximum platform version.
+            </summary>
+        </member>
+        <member name="P:Models.Components.ModuleName">
+            <summary>
+            Module name.
+            </summary>
+        </member>
+        <member name="M:Models.Components.ToXElement">
+            <summary>
+            Maps <see cref="T:Models.Components"/> to <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+        </member>
+        <member name="M:Models.Components.GetComponentEntry">
+            <summary>
+            Gets component entry.
+            </summary>
+        </member>
+        <member name="T:Models.PluginType">
+            <summary>
+            Types of a plugin.
+            </summary>
+        </member>
+        <member name="F:Models.PluginType.Application">
+            <summary>
+            The Application.
+            </summary>
+        </member>
+        <member name="F:Models.PluginType.Command">
+            <summary>
+            The Command.
+            </summary>
+        </member>
+        <member name="T:Models.ProjectWithAssemblyType">
+            <summary>
+            Pair of the <see cref="P:Models.ProjectWithAssemblyType.Project"/> and the <see cref="P:Models.ProjectWithAssemblyType.AssemblyType"/>.
+            </summary>
+        </member>
+        <member name="M:Models.ProjectWithAssemblyType.#ctor(Nuke.Common.ProjectModel.Project,Models.AssemblyType)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="project">The <see cref="P:Models.ProjectWithAssemblyType.Project"/>.</param>
+            <param name="assemblyType">The <see cref="P:Models.ProjectWithAssemblyType.AssemblyType"/>.</param>
+        </member>
+        <member name="P:Models.ProjectWithAssemblyType.Project">
+            <summary>
+            The project.
+            </summary>
+        </member>
+        <member name="P:Models.ProjectWithAssemblyType.AssemblyType">
+            <summary>
+            The assembly type.
+            </summary>
+        </member>
+        <member name="T:Models.RevitAddIns">
+            <summary>
+            Specifies Revit addin file.
+            </summary>
+        </member>
+        <member name="P:Models.RevitAddIns.AddIn">
+            <summary>
+            List of addins.
+            </summary>
+        </member>
+        <member name="T:Models.RevitComponents">
+            <inheritdoc />
+        </member>
+        <member name="M:Models.RevitComponents.GetComponentEntry">
+            <inheritdoc />
+        </member>
+        <member name="T:RevitBuild">
+            <summary>
+            Проект для сбоки MSI
+            </summary>
+        </member>
+        <member name="P:RevitBuild.OutputTmpDirBin">
+            <summary>
+            Output "bin" temp directory path.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.OutputTmpDir">
+            <summary>
+            Output temp directory path.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.Cert">
+            <summary>
+            Certificate path.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.PrivateKey">
+            <summary>
+            Private key container.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.Csp">
+            <summary>
+            CSP containing for Private key.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.Algorithm">
+            <summary>
+            Digest algorithm.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.ServerUrl">
+            <summary>
+            Timestamp server URL.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.Project">
+            <summary>
+            Проект
+            </summary>
+        </member>
+        <member name="P:RevitBuild.Version">
+            <summary>
+            Версия ревита
+            </summary>
+        </member>
+        <member name="P:RevitBuild.InstallWixTools">
+            <summary>
+            Installs WixSharp.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.CompileToTemp">
+            <summary>
+            Compiles the project defined in <see cref="P:RevitBuild.Project"/> to temporary path.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.BuildInnoExe">
+            <summary>
+            Builds an EXE package.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.GenerateProjectProps">
+            <summary>
+            Generates project properties (PackageGuid, UpgradeCode and other).
+            </summary>
+        </member>
+        <member name="P:RevitBuild.SignAssemblies">
+            <summary>
+            Signs assemblies af a given project.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.GeneratePackageContentsFile">
+            <summary>
+            Generates a package contents file.
+            </summary>
+        </member>
+        <member name="P:RevitBuild.GenerateAdditionalFiles">
+            <summary>
+            Generates additional files.
+            </summary>
+        </member>
+        <member name="M:RevitBuild.GetAssemblyTypes(Nuke.Common.ProjectModel.Project,System.String,System.String,System.String)">
+            <summary>
+            Gets assembly types.
+            </summary>
+            <param name="project">Selected Project.</param>
+            <param name="outputBinDir">Output assembly directory.</param>
+            <param name="outputDir">Output directory.</param>
+            <param name="configuration">Selected configuration.</param>
+        </member>
+        <member name="T:RevitWixBuilder">
+            <inheritdoc />
+        </member>
+        <member name="M:RevitWixBuilder.GenerateAdditionalFiles(System.String,System.Collections.Generic.IEnumerable{Nuke.Common.ProjectModel.Project},System.Collections.Generic.IEnumerable{Models.AssemblyType},System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:RevitWixBuilder.NeedGeneratePackageContents(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:RevitWixBuilder.GetDebugInstallDir(Nuke.Common.ProjectModel.Project,System.String)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

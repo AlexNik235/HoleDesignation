@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitBuildProject", "RevitBuildProject\RevitBuildProject.csproj", "{267B318E-C6E7-4F3A-B6C1-25E637112DF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{4284B8BC-05E4-4FFE-8507-FF1A12EF9AF1}"
+ProjectSection(SolutionItems) = preProject
+	Directory.Build.Props = Directory.Build.Props
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.MsiBuilder", "RxBim.MsiBuilder\RxBim.MsiBuilder.csproj", "{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.MsiBuilder.Bin", "RxBim.MsiBuilder.Bin\RxBim.MsiBuilder.Bin.csproj", "{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.MsiBuilder.GlobalTool", "RxBim.MsiBuilder.GlobalTool\RxBim.MsiBuilder.GlobalTool.csproj", "{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		2022|Any CPU = 2022|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		R2019|Any CPU = R2019|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.2022|Any CPU.ActiveCfg = 2022|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.2022|Any CPU.Build.0 = 2022|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.R2019|Any CPU.ActiveCfg = R2019|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.R2019|Any CPU.Build.0 = R2019|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267B318E-C6E7-4F3A-B6C1-25E637112DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.2022|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.2022|Any CPU.Build.0 = Debug|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.R2019|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.R2019|Any CPU.Build.0 = Debug|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C96FBA-8F62-44B1-ADD9-C526CF45D3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.2022|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.2022|Any CPU.Build.0 = Debug|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.R2019|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.R2019|Any CPU.Build.0 = Debug|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0AA768-694E-4F2F-A2F0-572C06FBDABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.2022|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.2022|Any CPU.Build.0 = Debug|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.R2019|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.R2019|Any CPU.Build.0 = Debug|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95BB33B-7E2C-4B5C-A25C-A45447CE8CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {536E5169-5787-474F-8DA3-ABC38B8667C2}
+	EndGlobalSection
+EndGlobal

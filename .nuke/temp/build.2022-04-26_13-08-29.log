@@ -1,0 +1,165 @@
+V |                      | HandleShellCompletion.OnBuildCreated (200)
+V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+V |                      | Passing value for RevitBuild.Solution (HoleDesignation.sln)
+V |                      | InjectParameterValues.OnBuildCreated (100)
+V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+V |                      | UpdateNotification.OnBuildCreated (10)
+V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+V |                      | HandleHelpRequests.OnBuildInitialized (5)
+V |                      | CheckBuildProjectConfigurations.OnBuildInitialized (0)
+W |                      | Solution C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation.sln has an active build configuration for C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\_build.csproj
+V |                      | Telemetry.OnBuildInitialized (0)
+V |                      | Sending BuildStarted telemetry event ...
+V |                      |   build_components         = 
+V |                      |   build_type               = Project
+V |                      |   compile_time             = 3
+V |                      |   config_generators        = 
+V |                      |   host                     = Rider
+V |                      |   num_custom_components    = 0
+V |                      |   num_custom_extensions    = 0
+V |                      |   num_partitioned_targets  = 0
+V |                      |   num_secrets              = 0
+V |                      |   num_targets              = 10
+V |                      |   os_architecture          = X64
+V |                      |   os_platform              = Windows
+V |                      |   repo_branch              = main
+V |                      |   repo_commit              = 78acb8
+V |                      |   repo_provider            = GitHub
+V |                      |   repo_url                 = 8f9401
+V |                      |   target_framework         = .NETCoreApp,Version=v6.0
+V |                      |   version_dotnet_sdk       = 6.0.101
+V |                      |   version_nuke_common      = 6.0.2
+V |                      |   version_nuke_global_tool = 5.3.0
+V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+V | Clean                | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | Clean                | Telemetry.OnTargetSucceeded (0)
+V | Clean                | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | Restore              | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | Restore              | > "C:\Program Files\dotnet\dotnet.exe" restore "C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation.sln"
+D | Restore              |   Определение проектов для восстановления...
+D | Restore              |   Восстановлен C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\GENPRO_Design.csproj (за 105 ms).
+D | Restore              |   Проектов обновлено для восстановления: 3 из 4.
+V | Restore              | Telemetry.OnTargetSucceeded (0)
+V | Restore              | Sending TargetSucceeded telemetry event ...
+V | Restore              |   build_components         = 
+V | Restore              |   build_type               = Project
+V | Restore              |   compile_time             = 7
+V | Restore              |   config_generators        = 
+V | Restore              |   host                     = Rider
+V | Restore              |   num_custom_components    = 0
+V | Restore              |   num_custom_extensions    = 0
+V | Restore              |   num_partitioned_targets  = 0
+V | Restore              |   num_secrets              = 0
+V | Restore              |   num_targets              = 10
+V | Restore              |   os_architecture          = X64
+V | Restore              |   os_platform              = Windows
+V | Restore              |   repo_branch              = main
+V | Restore              |   repo_commit              = 78acb8
+V | Restore              |   repo_provider            = GitHub
+V | Restore              |   repo_url                 = 8f9401
+V | Restore              |   target_current_partition = 1
+V | Restore              |   target_duration          = 1
+V | Restore              |   target_framework         = .NETCoreApp,Version=v6.0
+V | Restore              |   target_name              = Restore
+V | Restore              |   target_total_partitions  = 1
+V | Restore              |   version_dotnet_sdk       = 6.0.101
+V | Restore              |   version_nuke_common      = 6.0.2
+V | Restore              |   version_nuke_global_tool = 5.3.0
+V | Restore              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | CompileToTemp        | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | CompileToTemp        | > "C:\Program Files\dotnet\dotnet.exe" build "C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj" --configuration Debug --output C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin
+D | CompileToTemp        | Microsoft (R) Build Engine версии 17.0.0+c9eb9dd64 для .NET
+D | CompileToTemp        | (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+D | CompileToTemp        | 
+D | CompileToTemp        |   Определение проектов для восстановления...
+D | CompileToTemp        |   Все проекты обновлены для восстановления.
+D | CompileToTemp        |   ClassLibrary1 -> C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\ClassLibrary1.dll
+W | CompileToTemp        | CSC : warning SA0001: XML comment analysis is disabled due to project configuration [C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
+D | CompileToTemp        |   HoleDesignation -> C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.dll
+D | CompileToTemp        | 
+D | CompileToTemp        | Сборка успешно завершена.
+D | CompileToTemp        | 
+W | CompileToTemp        | CSC : warning SA0001: XML comment analysis is disabled due to project configuration [C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
+D | CompileToTemp        |     Предупреждений: 1
+D | CompileToTemp        |     Ошибок: 0
+D | CompileToTemp        | 
+D | CompileToTemp        | Прошло времени 00:00:00.94
+V | CompileToTemp        | Telemetry.OnTargetSucceeded (0)
+V | CompileToTemp        | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | GenerateAdditionalFi | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | GenerateAdditionalFi | Telemetry.OnTargetSucceeded (0)
+V | GenerateAdditionalFi | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | GeneratePackageConte | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | GeneratePackageConte | Telemetry.OnTargetSucceeded (0)
+V | GeneratePackageConte | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | SignAssemblies       | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | SignAssemblies       | Telemetry.OnTargetSucceeded (0)
+V | SignAssemblies       | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | BuildInnoExe         | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | BuildInnoExe         | > C:\Users\nikitenkoaa\.nuget\packages\tools.innosetup\6.2.1\tools\ISCC.exe "C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\.nuke\temp\package.iss" /O"C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\out"
+D | BuildInnoExe         | Inno Setup 6 Command-Line Compiler
+D | BuildInnoExe         | Copyright (C) 1997-2022 Jordan Russell. All rights reserved.
+D | BuildInnoExe         | Portions Copyright (C) 2000-2022 Martijn Laan. All rights reserved.
+D | BuildInnoExe         | Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+D | BuildInnoExe         | https://www.innosetup.com
+D | BuildInnoExe         | 
+D | BuildInnoExe         | Compiler engine version: Inno Setup 6.2.1
+D | BuildInnoExe         | 
+D | BuildInnoExe         | Preprocessing
+D | BuildInnoExe         |    Reading file: C:\Users\nikitenkoaa\.nuget\packages\tools.innosetup\6.2.1\tools\ISPPBuiltins.iss
+D | BuildInnoExe         | Parsing [Setup] section, line 3
+D | BuildInnoExe         | Parsing [Setup] section, line 4
+D | BuildInnoExe         | Parsing [Setup] section, line 5
+D | BuildInnoExe         | Parsing [Setup] section, line 6
+D | BuildInnoExe         | Parsing [Setup] section, line 7
+D | BuildInnoExe         | Parsing [Setup] section, line 8
+D | BuildInnoExe         | Parsing [Setup] section, line 9
+D | BuildInnoExe         | Parsing [Setup] section, line 10
+D | BuildInnoExe         | Reading file (WizardImageFile)
+D | BuildInnoExe         | Reading file (WizardSmallImageFile)
+D | BuildInnoExe         | Preparing Setup program executable
+D | BuildInnoExe         |    Updating version info (SETUP.E32)
+D | BuildInnoExe         | Determining language code pages
+D | BuildInnoExe         |    Reading file: C:\Users\nikitenkoaa\.nuget\packages\tools.innosetup\6.2.1\tools\Default.isl
+D | BuildInnoExe         |    Messages in script file
+D | BuildInnoExe         | Reading default messages from Default.isl
+D | BuildInnoExe         | Parsing [LangOptions], [Messages], and [CustomMessages] sections
+D | BuildInnoExe         |    Reading file: C:\Users\nikitenkoaa\.nuget\packages\tools.innosetup\6.2.1\tools\Default.isl
+D | BuildInnoExe         |    Messages in script file
+D | BuildInnoExe         | Reading [Code] section
+D | BuildInnoExe         | Parsing [Files] section, line 13
+D | BuildInnoExe         | Parsing [Files] section, line 14
+D | BuildInnoExe         |    Reading version info: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\HoleDesignation.addin
+D | BuildInnoExe         | Compiling [Code] section
+D | BuildInnoExe         | Creating setup files
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\ClassLibrary1.dll
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\ClassLibrary1.pdb
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\CSharpFunctionalExtensions.dll
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.dll
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.pdb
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\MaterialDesignColors.dll
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\MaterialDesignThemes.Wpf.dll
+D | BuildInnoExe         |    Compressing: C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\HoleDesignation.addin
+D | BuildInnoExe         |    Compressing Setup program executable
+D | BuildInnoExe         |    Updating version info (SETUP.EXE)
+D | BuildInnoExe         | 
+D | BuildInnoExe         | 
+D | BuildInnoExe         | Successful compile (3,813 sec). Resulting Setup program filename is:
+D | BuildInnoExe         | C:\Users\nikitenkoaa\Desktop\�������� �������\HoleDesignation\HoleDesignation\out\HoleDesignation_1.0.0.1650967716.exe
+I | BuildInnoExe         | Deleting directory C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\HoleDesignation.addin...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\ClassLibrary1.dll...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\ClassLibrary1.pdb...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\CSharpFunctionalExtensions.dll...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.dll...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\HoleDesignation.pdb...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\MaterialDesignColors.dll...
+V | BuildInnoExe         | Deleting file C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin\MaterialDesignThemes.Wpf.dll...
+V | BuildInnoExe         | Deleting directory C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8\bin...
+V | BuildInnoExe         | Deleting directory C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_7e84ed4c-9361-4f50-960f-1b3bede5e8b8...
+V | BuildInnoExe         | Telemetry.OnTargetSucceeded (0)
+V | BuildInnoExe         | EventInvoker.OnTargetSucceeded (-3.4028235E+38)

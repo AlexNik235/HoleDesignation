@@ -1,0 +1,114 @@
+V |                      | HandleShellCompletion.OnBuildCreated (200)
+V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+V |                      | Passing value for RevitBuild.Solution (HoleDesignation.sln)
+V |                      | InjectParameterValues.OnBuildCreated (100)
+V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+V |                      | UpdateNotification.OnBuildCreated (10)
+V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+V |                      | HandleHelpRequests.OnBuildInitialized (5)
+V |                      | CheckBuildProjectConfigurations.OnBuildInitialized (0)
+W |                      | Solution C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation.sln has an active build configuration for C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\build\_build.csproj
+V |                      | Telemetry.OnBuildInitialized (0)
+V |                      | Sending BuildStarted telemetry event ...
+V |                      |   build_components         = 
+V |                      |   build_type               = Project
+V |                      |   compile_time             = 3
+V |                      |   config_generators        = 
+V |                      |   host                     = Rider
+V |                      |   num_custom_components    = 0
+V |                      |   num_custom_extensions    = 0
+V |                      |   num_partitioned_targets  = 0
+V |                      |   num_secrets              = 0
+V |                      |   num_targets              = 10
+V |                      |   os_architecture          = X64
+V |                      |   os_platform              = Windows
+V |                      |   repo_branch              = main
+V |                      |   repo_commit              = 78acb8
+V |                      |   repo_provider            = GitHub
+V |                      |   repo_url                 = 8f9401
+V |                      |   target_framework         = .NETCoreApp,Version=v6.0
+V |                      |   version_dotnet_sdk       = 6.0.101
+V |                      |   version_nuke_common      = 6.0.2
+V |                      |   version_nuke_global_tool = 5.3.0
+V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+V | Clean                | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | Clean                | Telemetry.OnTargetSucceeded (0)
+V | Clean                | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | Restore              | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | Restore              | > "C:\Program Files\dotnet\dotnet.exe" restore "C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation.sln"
+D | Restore              |   Определение проектов для восстановления...
+D | Restore              |   Восстановлен C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\GENPRO_Design.csproj (за 109 ms).
+D | Restore              |   Проектов обновлено для восстановления: 3 из 4.
+V | Restore              | Telemetry.OnTargetSucceeded (0)
+V | Restore              | Sending TargetSucceeded telemetry event ...
+V | Restore              |   build_components         = 
+V | Restore              |   build_type               = Project
+V | Restore              |   compile_time             = 7
+V | Restore              |   config_generators        = 
+V | Restore              |   host                     = Rider
+V | Restore              |   num_custom_components    = 0
+V | Restore              |   num_custom_extensions    = 0
+V | Restore              |   num_partitioned_targets  = 0
+V | Restore              |   num_secrets              = 0
+V | Restore              |   num_targets              = 10
+V | Restore              |   os_architecture          = X64
+V | Restore              |   os_platform              = Windows
+V | Restore              |   repo_branch              = main
+V | Restore              |   repo_commit              = 78acb8
+V | Restore              |   repo_provider            = GitHub
+V | Restore              |   repo_url                 = 8f9401
+V | Restore              |   target_current_partition = 1
+V | Restore              |   target_duration          = 1
+V | Restore              |   target_framework         = .NETCoreApp,Version=v6.0
+V | Restore              |   target_name              = Restore
+V | Restore              |   target_total_partitions  = 1
+V | Restore              |   version_dotnet_sdk       = 6.0.101
+V | Restore              |   version_nuke_common      = 6.0.2
+V | Restore              |   version_nuke_global_tool = 5.3.0
+V | Restore              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | CompileToTemp        | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | CompileToTemp        | > "C:\Program Files\dotnet\dotnet.exe" build "C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj" --configuration Debug --output C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_f6d6b33d-447e-4930-a822-5d259b1dedb6\bin
+D | CompileToTemp        | Microsoft (R) Build Engine версии 17.0.0+c9eb9dd64 для .NET
+D | CompileToTemp        | (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+D | CompileToTemp        | 
+D | CompileToTemp        |   Определение проектов для восстановления...
+D | CompileToTemp        |   Все проекты обновлены для восстановления.
+D | CompileToTemp        |   ClassLibrary1 -> C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_f6d6b33d-447e-4930-a822-5d259b1dedb6\bin\ClassLibrary1.dll
+W | CompileToTemp        | CSC : warning SA0001: XML comment analysis is disabled due to project configuration [C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
+D | CompileToTemp        |   HoleDesignation -> C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_f6d6b33d-447e-4930-a822-5d259b1dedb6\bin\HoleDesignation.dll
+D | CompileToTemp        | 
+D | CompileToTemp        | Сборка успешно завершена.
+D | CompileToTemp        | 
+W | CompileToTemp        | CSC : warning SA0001: XML comment analysis is disabled due to project configuration [C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\HoleDesignation.csproj]
+D | CompileToTemp        |     Предупреждений: 1
+D | CompileToTemp        |     Ошибок: 0
+D | CompileToTemp        | 
+D | CompileToTemp        | Прошло времени 00:00:00.92
+V | CompileToTemp        | Telemetry.OnTargetSucceeded (0)
+V | CompileToTemp        | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | GenerateAdditionalFi | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | GenerateAdditionalFi | Telemetry.OnTargetSucceeded (0)
+V | GenerateAdditionalFi | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | GeneratePackageConte | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | GeneratePackageConte | Telemetry.OnTargetSucceeded (0)
+V | GeneratePackageConte | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | SignAssemblies       | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | SignAssemblies       | Telemetry.OnTargetSucceeded (0)
+V | SignAssemblies       | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | BuildInnoExe         | EventInvoker.OnTargetRunning (-3.4028235E+38)
+E | BuildInnoExe         | Running target BuildInnoExe failed
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at RevitBuildProject.Extensions.EmbeddedResourceExtensions.ReadResource(String name) in C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\Extensions\EmbeddedResourceExtensions.cs:line 32
+   at InnoBuilder.AddUninstallScript() in C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\Builders\InnoBuilder.cs:line 88
+   at RevitBuild.BuildInnoInstaller(Project project, String configuration) in C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\RevitBuild.cs:line 314
+   at RevitBuild.<get_BuildInnoExe>b__55_1() in C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\RevitBuild.cs:line 199
+   at Nuke.Common.Execution.BuildExecutor.<>c.<Execute>b__4_2(Action x)
+   at Nuke.Common.Utilities.Collections.EnumerableExtensions.ForEach[T](IEnumerable`1 enumerable, Action`1 action)
+   at Nuke.Common.Execution.BuildExecutor.Execute(NukeBuild build, ExecutableTarget target, IReadOnlyCollection`1 previouslyExecutedTargets, Boolean failureMode)
+V | BuildInnoExe         | EventInvoker.OnTargetFailed (-3.4028235E+38)

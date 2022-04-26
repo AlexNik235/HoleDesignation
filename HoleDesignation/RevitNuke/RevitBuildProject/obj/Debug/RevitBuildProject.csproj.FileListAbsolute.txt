@@ -1,0 +1,42 @@
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\Debug\RevitBuildProject.deps.json
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\Debug\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\Debug\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\Debug\RevitBuildProject.pdb
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\Debug\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.csproj.AssemblyReference.cache
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.AssemblyInfoInputs.cache
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.AssemblyInfo.cs
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.csproj.CoreCompileInputs.cache
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\Debug\RevitBuildProject.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.deps.json
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\bin\Debug\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.csproj.AssemblyReference.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.AssemblyInfoInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.AssemblyInfo.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.csproj.CoreCompileInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\RevitNuke\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.deps.json
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\bin\Debug\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\bin\Debug\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.csproj.AssemblyReference.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.AssemblyInfoInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.AssemblyInfo.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.csproj.CoreCompileInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\RevitNuke\RevitBuildProject\obj\Debug\RevitBuildProject.pdb

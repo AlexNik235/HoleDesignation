@@ -1,0 +1,109 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="Properties\GenproResource.Designer.cs">
+        <AutoGen>True</AutoGen>
+        <DesignTime>True</DesignTime>
+        <DependentUpon>GenproResource.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\GenproResource.Designer.cs">
+        <AutoGen>True</AutoGen>
+        <DesignTime>True</DesignTime>
+        <DependentUpon>GenproResource.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Properties\GenproResource.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>GenproResource.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Include="DialogWindow\CommonInfoWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Include="DialogWindow\CreateNameWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Include="DialogWindow\GenproProgressBarWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Include="DialogWindow\InputWindow.xaml" />
+      <Page Include="DialogWindow\QuestionWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Include="DialogWindow\RenameWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Include="GenproDesignDictionary.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\genpro_logo.png" />
+      <Resource Include="Resources\genpro_logo_white.png" />
+      <Resource Include="Resources\genpro_logo_white_full.png" />
+      <Resource Include="Resources\gp_error.png" />
+      <Resource Include="Resources\gp_icon.ico" />
+      <Resource Include="Resources\gp_info.png" />
+      <Resource Include="Resources\gp_logo.png" />
+      <Resource Include="Resources\gp_question.png" />
+      <Resource Include="Resources\gp_question_trans.png" />
+      <Resource Include="Resources\gp_warning.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Page Include="DialogWindow\CommonInfoWindow.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Page Include="DialogWindow\CreateNameWindow.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Page Include="DialogWindow\GenproProgressBarWindow.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Page Include="DialogWindow\InputWindow.xaml" />
+        <Page Include="DialogWindow\QuestionWindow.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Page Include="DialogWindow\RenameWindow.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GenproDesignDictionary.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MaterialDesignColors" Version="2.0.3" />
+      <PackageReference Include="MaterialDesignThemes" Version="4.4.0" />
+      <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="PresentationFramework" />
+    </ItemGroup>
+
+</Project>

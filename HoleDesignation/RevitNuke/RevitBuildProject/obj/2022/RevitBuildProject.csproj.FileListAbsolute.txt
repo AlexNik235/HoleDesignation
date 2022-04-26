@@ -1,0 +1,14 @@
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\2022\RevitBuildProject.deps.json
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\2022\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\2022\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\2022\RevitBuildProject.pdb
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\bin\2022\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.csproj.AssemblyReference.cache
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.AssemblyInfoInputs.cache
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.AssemblyInfo.cs
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.csproj.CoreCompileInputs.cache
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\ref\RevitBuildProject.dll
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.xml
+C:\Users\nikitenkoaa\Desktop\RevitBuildProject\RevitBuildProject\obj\2022\RevitBuildProject.pdb

@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "so/w9Ky4fbg+DAw4Q/pX1YhUSUPIxkHaScYWiBs0TcqRdJcFW1rTTvL8Pbm4SM3KiqZ366SRyjqzNYe4WeS2/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\Genpro_Desine\\Genpro_Desine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\materialdesignthemes\\4.4.0\\materialdesignthemes.4.4.0.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.resources.extensions\\6.0.0\\system.resources.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MaterialDesignColors 2.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MaterialDesignColors",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}
