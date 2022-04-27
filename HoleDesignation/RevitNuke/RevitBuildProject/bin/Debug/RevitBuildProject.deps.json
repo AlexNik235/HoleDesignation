@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "RevitBuildProject/1.0.2": {
+      "RevitBuildProject/1.0.5": {
         "dependencies": {
           "CommandLineParser": "2.8.0",
           "InnoSetup.ScriptBuilder": "1.2.1",
@@ -1330,7 +1330,7 @@
     }
   },
   "libraries": {
-    "RevitBuildProject/1.0.2": {
+    "RevitBuildProject/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

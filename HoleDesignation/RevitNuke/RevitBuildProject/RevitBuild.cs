@@ -190,6 +190,7 @@ public class RevitBuild : NukeBuild
     /// </summary>
     public Target BuildInnoExe => _ => _
         .Description("Build installation EXE from selected project (if Release - sign assemblies)")
+        .Requires(() => Version)
         .DependsOn(SignAssemblies)
         .DependsOn(GenerateAdditionalFiles)
         .DependsOn(GeneratePackageContentsFile)
@@ -290,7 +291,7 @@ public class RevitBuild : NukeBuild
         string outputDir,
         string configuration)
     {
-        var options = _wix.GetBuildMsiOptions(project, outputDir, configuration, _version);
+        var options = _wix.GetBuildMsiOptions(project, outputDir, configuration, Version);
         return _types ??= project.GetAssemblyTypes(outputBinDir, options);
     }
     

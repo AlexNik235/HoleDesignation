@@ -474,7 +474,7 @@
           "lib/netstandard2.0/Octokit.dll": {}
         }
       },
-      "RevitBuildProject/1.0.5": {
+      "RevitBuildProject/1.0.7": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.8.0",
@@ -2987,15 +2987,15 @@
         "octokit.png"
       ]
     },
-    "RevitBuildProject/1.0.5": {
-      "sha512": "Oy0IH2SD7O1/bsnx670EDlw3/w/itdxrsVfqfh+Ycxux7tPRAsk7ttDmh/V1q4hc/7LSW/RbEVRYb/jG+X7VQg==",
+    "RevitBuildProject/1.0.7": {
+      "sha512": "aDjoHVMJ58JAppqod796GIGXrOQ4PpfPe6om3UZXMpbysIKCRo0DlaicbnudefMYB72fobZBaVJ+fRLWfkgOKw==",
       "type": "package",
-      "path": "revitbuildproject/1.0.5",
+      "path": "revitbuildproject/1.0.7",
       "files": [
         ".nupkg.metadata",
         "lib/net6.0/RevitBuildProject.dll",
         "lib/net6.0/RevitBuildProject.xml",
-        "revitbuildproject.1.0.5.nupkg.sha512",
+        "revitbuildproject.1.0.7.nupkg.sha512",
         "revitbuildproject.nuspec"
       ]
     },
@@ -7568,7 +7568,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "RevitBuildProject >= 1.0.5"
+      "RevitBuildProject >= 1.0.7"
     ]
   },
   "packageFolders": {
@@ -7597,7 +7597,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
+        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\RevitNuke\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7618,7 +7618,7 @@
         "dependencies": {
           "RevitBuildProject": {
             "target": "Package",
-            "version": "[1.0.5, )"
+            "version": "[1.0.7, )"
           }
         },
         "imports": [

@@ -8,12 +8,12 @@
     <NukeRootDirectory>..</NukeRootDirectory>
     <NukeScriptDirectory>..\HoleDesignation</NukeScriptDirectory>
     <NukeTelemetryVersion>1</NukeTelemetryVersion>
-    <Configurations>Debug;Release;2017;2018;2019;2020;2021;2022</Configurations>
-    <Platforms>AnyCPU</Platforms>
+    <Configurations>Debug;Release;R2020;R2022;R2021</Configurations>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RevitBuildProject" Version="1.0.5" />
+    <PackageReference Include="RevitBuildProject" Version="1.0.7" />
   </ItemGroup>
 
 </Project>

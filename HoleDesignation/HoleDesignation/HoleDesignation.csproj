@@ -4,74 +4,40 @@
     <Version>1.0.0</Version>
     <RootNamespace>HoleDesignation</RootNamespace>
     <AssemblyName>$(RootNamespace)</AssemblyName>
-    <Configurations>Debug;2017;2018;2019;2020;2021;2022</Configurations>
+    <Configurations>Debug;R2022;R2021;R2020</Configurations>
 	<CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <LangVersion>latest</LangVersion>
-    <Platforms>x64</Platforms>
+    <TargetFramework>net48</TargetFramework>
+    <Platforms>x64;AnyCPU</Platforms>
   </PropertyGroup>
-	
-  <PropertyGroup Condition="'$(Configuration)'=='2022'  or '$(Configuration)'=='Debug'">
+  
+  <PropertyGroup Condition=" '$(Configuration)' == 'R2022' ">
     <TargetFramework>net48</TargetFramework>
     <Description>2022</Description>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)'=='2021'">
+  
+  <PropertyGroup Condition=" '$(Configuration)' == 'R2021' ">
     <TargetFramework>net48</TargetFramework>
-    <Description>2022</Description>
+    <Description>2021</Description>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)'=='2020'">
-    <TargetFramework>net47</TargetFramework>
-    <Description>2022</Description>
+  
+  <PropertyGroup Condition=" '$(Configuration)' == 'R2020' or '$(Configuration)'=='Debug'">
+    <TargetFramework>net472</TargetFramework>
+    <Description>2020</Description>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)'=='2019'">
-    <TargetFramework>net47</TargetFramework>
-    <Description>2022</Description>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)'=='2018'">
-    <TargetFramework>net452</TargetFramework>
-    <Description>2022</Description>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)'=='2017'">
-    <TargetFramework>net452</TargetFramework>
-    <Description>2022</Description>
-  </PropertyGroup>
-	
-  <Choose>
-    <When Condition="'$(Configuration)'=='R2017'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2017.1.0" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-    <When Condition="'$(Configuration)'=='R2018'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2018.2.0" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-    <When Condition="'$(Configuration)'=='R2019'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2019.2.0" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-    <When Condition="'$(Configuration)'=='R2020'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2020.2.1" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-    <When Condition="'$(Configuration)'=='R2021'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2021.0.0" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-    <When Condition="'$(Configuration)'=='R2022'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2022.0.2.392" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-    <When Condition="'$(Configuration)'=='Debug'">
-      <ItemGroup>
-        <PackageReference Include="Autodesk.Revit.SDK" Version="2022.0.2.392" ExcludeAssets="runtime" />
-      </ItemGroup>
-    </When>
-  </Choose>
+
+  <ItemGroup Condition="'$(Configuration)'=='R2020' or '$(Configuration)'=='Debug'">
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2020.2.1" ExcludeAssets="runtime" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(Configuration)'=='R2021'">
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2021.0.0" ExcludeAssets="runtime" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(Configuration)'=='R2022'">
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2022.0.2.392" ExcludeAssets="runtime" />
+  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="CSharpFunctionalExtensions" Version="2.29.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
@@ -80,7 +46,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+    <ProjectReference Include="..\GENPRO_Design\GENPRO_Design.csproj" />
   </ItemGroup>
   <PropertyGroup>
     <PackageGuid>41670a3b-f468-42a2-96de-5103d4f339e7</PackageGuid>

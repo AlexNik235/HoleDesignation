@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4DR1pqiqI19nwXelvpSCuXAYnsF2oyrM5ub4EE0VML+xjQOf4SwCeAiqpOp+lZBX01aRqQrMM+YSCxVNzrXqEQ==",
+  "dgSpecHash": "/omlNBlaS8dSb1PpdFqlug7fSrv/6HAy9gpJCO2KojjQR+wKbHRjdO+n+LcZR7gGz7jWJAcQTSZMLKAWQa2LMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.resources.extensions\\6.0.0\\system.resources.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512"
   ],
   "logs": []
 }

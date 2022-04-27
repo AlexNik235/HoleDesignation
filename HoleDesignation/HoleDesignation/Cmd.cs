@@ -3,8 +3,8 @@
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
-    using ClassLibrary1.DialogWindow;
     using CSharpFunctionalExtensions;
+    using GENPRO_Design.DialogWindow;
     using Services;
     using Result = Autodesk.Revit.UI.Result;
 

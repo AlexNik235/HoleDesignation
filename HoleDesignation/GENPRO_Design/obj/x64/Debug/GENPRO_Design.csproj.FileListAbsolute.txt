@@ -1,9 +1,25 @@
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.AssemblyReference.cache
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GenproDesignDictionary.baml
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\CommonInfoWindow.g.cs
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\CreateNameWindow.g.cs
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\GenproProgressBarWindow.g.cs
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\QuestionWindow.g.cs
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\DialogWindow\RenameWindow.g.cs
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.cache
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.lref
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1e654949-86df-4990-8618-b4063da6835b\bin\GENPRO_Design.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1e654949-86df-4990-8618-b4063da6835b\bin\GENPRO_Design.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.AssemblyReference.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\InputWindow.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GenproDesignDictionary.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CommonInfoWindow.g.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CreateNameWindow.g.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\GenproProgressBarWindow.g.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\InputWindow.g.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\QuestionWindow.g.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\RenameWindow.g.cs
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.lref
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CommonInfoWindow.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CreateNameWindow.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\GenproProgressBarWindow.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\QuestionWindow.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\RenameWindow.baml
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.g.resources
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.Properties.GenproResource.resources
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.GenerateResource.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.CoreCompileInputs.cache
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.CopyComplete
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.pdb

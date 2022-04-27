@@ -29,7 +29,13 @@ C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\Hol
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net48\HoleDesignation.csproj.CopyComplete
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net48\HoleDesignation.dll
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net48\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_c15e84d3-6270-4fe7-b8d8-591b36a1fbaf\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_c15e84d3-6270-4fe7-b8d8-591b36a1fbaf\bin\HoleDesignation.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_4efc91e9-62d5-4289-b78a-73a5453fbf62\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_4efc91e9-62d5-4289-b78a-73a5453fbf62\bin\HoleDesignation.pdb
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net48\MaterialDesignColors.dll
 C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net48\MaterialDesignThemes.Wpf.dll
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net48\ClassLibrary1.dll
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net48\ClassLibrary1.pdb
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net48\GENPRO_Design.dll
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net48\GENPRO_Design.pdb
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1e654949-86df-4990-8618-b4063da6835b\bin\HoleDesignation.dll
+C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1e654949-86df-4990-8618-b4063da6835b\bin\HoleDesignation.pdb

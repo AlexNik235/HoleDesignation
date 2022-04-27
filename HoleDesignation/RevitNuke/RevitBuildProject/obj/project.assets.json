@@ -7553,7 +7553,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.2",
+    "version": "1.0.5",
     "restore": {
       "projectUniqueName": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\RevitNuke\\RevitBuildProject\\RevitBuildProject.csproj",
       "projectName": "RevitBuildProject",
@@ -7574,7 +7574,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\RevitNuke\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
+        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

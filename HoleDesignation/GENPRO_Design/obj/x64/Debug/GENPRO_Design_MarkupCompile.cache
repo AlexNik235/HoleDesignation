@@ -4,17 +4,17 @@
 library
 C#
 .cs
-D:\Dev\genpro\GENPRO_Design\obj\x64\Debug\
+C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\
 GENPRO_Design
 none
 false
-DEBUG;TRACE
+TRACE;R2020
 
-61378041732
+71515440438
 
-151359481975
-301206121899
-DialogWindow\CommonInfoWindow.xaml;DialogWindow\CreateNameWindow.xaml;DialogWindow\GenproProgressBarWindow.xaml;DialogWindow\QuestionWindow.xaml;DialogWindow\RenameWindow.xaml;GenproDesignDictionary.xaml;
+16-83393864
+19505901574
+DialogWindow\CommonInfoWindow.xaml;DialogWindow\CreateNameWindow.xaml;DialogWindow\GenproProgressBarWindow.xaml;DialogWindow\InputWindow.xaml;DialogWindow\QuestionWindow.xaml;DialogWindow\RenameWindow.xaml;GenproDesignDictionary.xaml;
 
-True
+False
 

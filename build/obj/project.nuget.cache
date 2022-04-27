@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IWwJ+9AMtpdRC1vQgLQXNUqR8eww/dtw69jz7693H4iqWykhzM33p0Ye95AcB89UW6IddHfco7M9i+qZBz8AeA==",
+  "dgSpecHash": "ZfavevIGrNqWVK4xJ1PJD5yL8oTQRfTBooQDj/bCpYSZQLSK6WC2Hrup81C8jPqRLQah+Y/aEoDVkBfgKkFmUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\build\\_build.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\nuget.versioning\\5.11.0\\nuget.versioning.5.11.0.nupkg.sha512",
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\nuke.common\\6.0.2\\nuke.common.6.0.2.nupkg.sha512",
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\octokit\\0.50.0\\octokit.0.50.0.nupkg.sha512",
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\revitbuildproject\\1.0.5\\revitbuildproject.1.0.5.nupkg.sha512",
+    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\revitbuildproject\\1.0.7\\revitbuildproject.1.0.7.nupkg.sha512",
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\nikitenkoaa\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
