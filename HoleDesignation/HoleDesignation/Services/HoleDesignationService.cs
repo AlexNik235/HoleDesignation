@@ -47,9 +47,10 @@
                 .Bind(() => _getElementService.GetPreSelectedFloor()
                     .OnFailureCompensate(() => _getElementService.SelectFloor()))
 
-                .Bind(floor => _getElementService.GetWindowsFromFloor(floor)
-                    .Bind(windows => _geometryService.GetInsideСontourFromFloor(floor)
-                        .Bind(edgeArr => _geometryService.FiltrateContoursByWindowsInstance(edgeArr, windows))))
+                .Bind(floor => _validationService.ValidateByContourCount(floor)
+                    .Bind(() => _getElementService.GetWindowsFromFloor(floor)
+                        .Bind(windows => _geometryService.GetInsideСontourFromFloor(floor)
+                            .Bind(edgeArr => _geometryService.FiltrateContoursByWindowsInstance(edgeArr, windows))))
                 .Tap(res => edgeArrays = res)
 
                 .Bind(_ => _getElementService.GetFamilySymbolByFamilyName(PluginSettings.DesignationRoundFamily))
@@ -58,7 +59,7 @@
                 .Bind(_ => _getElementService.GetFamilySymbolByFamilyName(PluginSettings.DesignationRectangleFamily))
                 .Tap(res => rectangleFamilySymbol = res)
 
-                .Bind(_ => CreateDesignationInstances(edgeArrays, roundFamilySymbol, rectangleFamilySymbol));
+                .Bind(_ => CreateDesignationInstances(edgeArrays, roundFamilySymbol, rectangleFamilySymbol)));
 
             transactionGroup.Assimilate();
 
@@ -79,6 +80,8 @@
                     foreach (var edgeArray in edgeArrays)
                     {
                         var contourData = _geometryService.GetContourData(edgeArray);
+                        if (!contourData.IsValid)
+                            continue;
 
                         FamilySymbol createdFamilySymbol;
                         switch (contourData.Type)
@@ -96,13 +99,13 @@
                             createdFamilySymbol,
                             _uiDoc.ActiveView);
 
-                        var rotationLine = Line.CreateUnbound(contourData.CentralPoint, XYZ.BasisZ);
-                        ElementTransformUtils.RotateElement(_uiDoc.Document, newFamily.Id, rotationLine, contourData.Angle);
-
                         if (!SetParameters(contourData, newFamily))
                         {
                             sb.Append($"\nНе удалось установить значения параметров для элемента {newFamily.Id}");
                         }
+
+                        var rotationLine = Line.CreateUnbound(contourData.CentralPoint, XYZ.BasisZ);
+                        ElementTransformUtils.RotateElement(_uiDoc.Document, newFamily.Id, rotationLine, contourData.Angle);
                     }
 
                     transaction.Commit();

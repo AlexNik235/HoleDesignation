@@ -1,31 +1,34 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
-      "Autodesk.Revit.SDK/2022.0.2.392": {
+    ".NETFramework,Version=v4.7.2": {
+      "Autodesk.Revit.SDK/2020.2.1": {
         "type": "package",
         "compile": {
-          "ref/net48/AdWindows.dll": {},
-          "ref/net48/RevitAPI.dll": {},
-          "ref/net48/RevitAPIBrowserUtils.dll": {},
-          "ref/net48/RevitAPIFoundation.dll": {},
-          "ref/net48/RevitAPIIFC.dll": {},
-          "ref/net48/RevitAPILink.dll": {},
-          "ref/net48/RevitAPIMacros.dll": {},
-          "ref/net48/RevitAPIMacrosInterop.dll": {},
-          "ref/net48/RevitAPIMacrosInteropAPI.dll": {},
-          "ref/net48/RevitAPISteel.dll": {},
-          "ref/net48/RevitAPIUI.dll": {},
-          "ref/net48/RevitAPIUILink.dll": {},
-          "ref/net48/RevitAPIUIMacros.dll": {},
-          "ref/net48/RevitAPIUIMacrosInterop.dll": {},
-          "ref/net48/RevitAPIUIMacrosInteropAPI.dll": {},
-          "ref/net48/RevitAddInUtility.dll": {},
-          "ref/net48/RevitDB.dll": {},
-          "ref/net48/RevitDBAPI.dll": {},
-          "ref/net48/RevitNET.dll": {},
-          "ref/net48/RevitUI.dll": {},
-          "ref/net48/RevitUIAPI.dll": {}
+          "lib/net471/AdWindows.dll": {},
+          "lib/net471/RevitAPI.dll": {},
+          "lib/net471/RevitAPIBrowserUtils.dll": {},
+          "lib/net471/RevitAPIFoundation.dll": {},
+          "lib/net471/RevitAPIIFC.dll": {},
+          "lib/net471/RevitAPILink.dll": {},
+          "lib/net471/RevitAPIMacros.dll": {},
+          "lib/net471/RevitAPIMacrosInterop.dll": {},
+          "lib/net471/RevitAPIMacrosInteropAPI.dll": {},
+          "lib/net471/RevitAPISteel.dll": {},
+          "lib/net471/RevitAPIUI.dll": {},
+          "lib/net471/RevitAPIUILink.dll": {},
+          "lib/net471/RevitAPIUIMacros.dll": {},
+          "lib/net471/RevitAPIUIMacrosInterop.dll": {},
+          "lib/net471/RevitAPIUIMacrosInteropAPI.dll": {},
+          "lib/net471/RevitAddInUtility.dll": {},
+          "lib/net471/RevitDB.dll": {},
+          "lib/net471/RevitDBAPI.dll": {},
+          "lib/net471/RevitNET.dll": {},
+          "lib/net471/RevitUI.dll": {},
+          "lib/net471/RevitUIAPI.dll": {}
+        },
+        "runtime": {
+          "lib/net471/_._": {}
         }
       },
       "CSharpFunctionalExtensions/2.29.0": {
@@ -66,7 +69,7 @@
       },
       "GENPRO_Design/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "MaterialDesignColors": "2.0.3",
           "MaterialDesignThemes": "4.2.1"
@@ -81,44 +84,43 @@
     }
   },
   "libraries": {
-    "Autodesk.Revit.SDK/2022.0.2.392": {
-      "sha512": "/0I7QoCC2xHkVA5jUHqnq9shb7bkqzH75VhvbVmGP7YofNvEZK3fILwXzaik1Dk5NRc9VIhEAmmmwnFRFxjigQ==",
+    "Autodesk.Revit.SDK/2020.2.1": {
+      "sha512": "1FwU0yuckPbGf9N2JDqYhbPAGsOD3lT20bv/X1wK1mr9GN1FRecNMPAMRvDFvBthiLyRKFYC3yie4Sm/SzpbfA==",
       "type": "package",
-      "path": "autodesk.revit.sdk/2022.0.2.392",
+      "path": "autodesk.revit.sdk/2020.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
-        "Revit.png",
-        "autodesk.revit.sdk.2022.0.2.392.nupkg.sha512",
+        "autodesk.revit.sdk.2020.2.1.nupkg.sha512",
         "autodesk.revit.sdk.nuspec",
-        "ref/net48/AdWindows.dll",
-        "ref/net48/RevitAPI.dll",
-        "ref/net48/RevitAPI.xml",
-        "ref/net48/RevitAPIBrowserUtils.dll",
-        "ref/net48/RevitAPIFoundation.dll",
-        "ref/net48/RevitAPIIFC.dll",
-        "ref/net48/RevitAPIIFC.xml",
-        "ref/net48/RevitAPILink.dll",
-        "ref/net48/RevitAPIMacros.dll",
-        "ref/net48/RevitAPIMacros.xml",
-        "ref/net48/RevitAPIMacrosInterop.dll",
-        "ref/net48/RevitAPIMacrosInteropAPI.dll",
-        "ref/net48/RevitAPISteel.dll",
-        "ref/net48/RevitAPIUI.dll",
-        "ref/net48/RevitAPIUI.xml",
-        "ref/net48/RevitAPIUILink.dll",
-        "ref/net48/RevitAPIUIMacros.dll",
-        "ref/net48/RevitAPIUIMacros.xml",
-        "ref/net48/RevitAPIUIMacrosInterop.dll",
-        "ref/net48/RevitAPIUIMacrosInteropAPI.dll",
-        "ref/net48/RevitAddInUtility.dll",
-        "ref/net48/RevitAddInUtility.xml",
-        "ref/net48/RevitDB.dll",
-        "ref/net48/RevitDBAPI.dll",
-        "ref/net48/RevitNET.dll",
-        "ref/net48/RevitUI.dll",
-        "ref/net48/RevitUIAPI.dll"
+        "lib/net471/AdWindows.dll",
+        "lib/net471/RevitAPI.dll",
+        "lib/net471/RevitAPI.xml",
+        "lib/net471/RevitAPIBrowserUtils.dll",
+        "lib/net471/RevitAPIFoundation.dll",
+        "lib/net471/RevitAPIIFC.dll",
+        "lib/net471/RevitAPIIFC.xml",
+        "lib/net471/RevitAPILink.dll",
+        "lib/net471/RevitAPIMacros.dll",
+        "lib/net471/RevitAPIMacros.xml",
+        "lib/net471/RevitAPIMacrosInterop.dll",
+        "lib/net471/RevitAPIMacrosInteropAPI.dll",
+        "lib/net471/RevitAPISteel.dll",
+        "lib/net471/RevitAPIUI.dll",
+        "lib/net471/RevitAPIUI.xml",
+        "lib/net471/RevitAPIUILink.dll",
+        "lib/net471/RevitAPIUIMacros.dll",
+        "lib/net471/RevitAPIUIMacros.xml",
+        "lib/net471/RevitAPIUIMacrosInterop.dll",
+        "lib/net471/RevitAPIUIMacrosInteropAPI.dll",
+        "lib/net471/RevitAddInUtility.dll",
+        "lib/net471/RevitAddInUtility.xml",
+        "lib/net471/RevitDB.dll",
+        "lib/net471/RevitDBAPI.dll",
+        "lib/net471/RevitNET.dll",
+        "lib/net471/RevitUI.dll",
+        "lib/net471/RevitUIAPI.dll"
       ]
     },
     "CSharpFunctionalExtensions/2.29.0": {
@@ -240,48 +242,46 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
-      "Autodesk.Revit.SDK >= 2022.0.2.392",
+    ".NETFramework,Version=v4.7.2": [
+      "Autodesk.Revit.SDK >= 2020.2.1",
       "CSharpFunctionalExtensions >= 2.29.0",
       "GENPRO_Design >= 1.0.0",
       "StyleCop.Analyzers >= 1.1.118"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Undea\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+      "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
       "projectName": "HoleDesignation",
-      "projectPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
-      "packagesPath": "C:\\Users\\nikitenkoaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\HoleDesignation\\obj\\",
+      "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+      "packagesPath": "C:\\Users\\Undea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\nikitenkoaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Undea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net48"
+        "net472"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\RevitNuke\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
+        "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\locaNugets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net48": {
-          "targetAlias": "net48",
+        "net472": {
           "projectReferences": {
-            "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj": {
-              "projectPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj"
+            "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj": {
+              "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj"
             }
           }
         }
@@ -293,13 +293,12 @@
       }
     },
     "frameworks": {
-      "net48": {
-        "targetAlias": "net48",
+      "net472": {
         "dependencies": {
           "Autodesk.Revit.SDK": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[2022.0.2.392, )"
+            "version": "[2020.2.1, )"
           },
           "CSharpFunctionalExtensions": {
             "target": "Package",
@@ -312,7 +311,7 @@
             "version": "[1.1.118, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -2,16 +2,16 @@
 [Setup]
 AppName=HoleDesignation
 AppId={{41670a3b-f468-42a2-96de-5103d4f339e7}
-AppVersion=1.0.0.1651003588
-DefaultDirName={userappdata}/Autodesk/Revit/Addins/2019\HoleDesignation
+AppVersion=1.0.0.1651056481
+DefaultDirName={userappdata}/Autodesk/Revit/Addins/2020\HoleDesignation
 UsePreviousAppDir=no
 PrivilegesRequired=lowest
-OutputBaseFilename=HoleDesignation_1.0.0.1651003588
+OutputBaseFilename=HoleDesignation_1.0.0.1651056481
 DisableDirPage=yes
 
 [Files]
-Source: "C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1e654949-86df-4990-8618-b4063da6835b\bin\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; 
-Source: "C:\Users\nikitenkoaa\AppData\Local\Temp\RxBim_build_1e654949-86df-4990-8618-b4063da6835b\*"; DestDir: "{userappdata}/Autodesk/Revit/Addins/2019"; 
+Source: "C:\Users\Undea\AppData\Local\Temp\RxBim_build_ec97abe1-64dd-4829-a2a4-354df0d16da8\bin\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; 
+Source: "C:\Users\Undea\AppData\Local\Temp\RxBim_build_ec97abe1-64dd-4829-a2a4-354df0d16da8\*"; DestDir: "{userappdata}/Autodesk/Revit/Addins/2020"; 
 
 [Code]
 function GetUninstallString(): String;

@@ -47,19 +47,29 @@
         /// Получает кривые из элемента
         /// </summary>
         /// <param name="element">Элемент</param>
-        /// <param name="includeNonVisibleObjects">Включать невидимую геометрию</param>
+        /// <param name="view">Вид на котором нужно искать геометрию элемента</param>
         /// <param name="revitLinkInstance">Если элемент из связанного файла, указывается экземпляр связи</param>
         /// <returns></returns>
         public static List<Curve> GetCurves(
             this Element element,
-            bool includeNonVisibleObjects = false,
+            View view = null,
             RevitLinkInstance revitLinkInstance = null)
         {
-            var opt = new Options
+            Options opt;
+            if (view == null)
             {
-                DetailLevel = ViewDetailLevel.Fine,
-                IncludeNonVisibleObjects = includeNonVisibleObjects
-            };
+                opt = new Options
+                {
+                    DetailLevel = ViewDetailLevel.Fine
+                };
+            }
+            else
+            {
+                opt = new Options
+                {
+                    View = view
+                };
+            }
 
             var curves = new List<Curve>();
             var geometry = element
@@ -75,6 +85,20 @@
             }
 
             return curves;
+        }
+
+        /// <summary>
+        /// Получает новую линию с направлением против часовой стрелки
+        /// </summary>
+        /// <param name="line">Линия</param>
+        /// <returns>Новая линия</returns>
+        public static Line AntiClockWizeDirectionLine(this Line line)
+        {
+            var firstPoint = line.GetEndPoint(0);
+            var secondPoint = line.GetEndPoint(1);
+            return firstPoint.Y <= secondPoint.Y 
+                ? Line.CreateBound(firstPoint, secondPoint) 
+                : Line.CreateBound(secondPoint, firstPoint);
         }
 
         /// <summary>

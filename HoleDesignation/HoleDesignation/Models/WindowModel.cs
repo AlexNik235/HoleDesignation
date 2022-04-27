@@ -22,7 +22,7 @@
         {
             _solid = new Lazy<Solid>(() =>
             {
-                var curves = familyInstance.GetCurves();
+                var curves = familyInstance.GetCurves(familyInstance.Document.ActiveView);
                 var curveLoop = geometryService.GetCurveLoopsFromCurves(curves);
                 if (curveLoop == null)
                     return null;

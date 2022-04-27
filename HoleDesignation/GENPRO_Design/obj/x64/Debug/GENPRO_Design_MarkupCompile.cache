@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\
 GENPRO_Design
 none
 false
@@ -13,7 +13,7 @@ TRACE;R2020
 71515440438
 
 16-83393864
-19505901574
+19-573307101
 DialogWindow\CommonInfoWindow.xaml;DialogWindow\CreateNameWindow.xaml;DialogWindow\GenproProgressBarWindow.xaml;DialogWindow\InputWindow.xaml;DialogWindow\QuestionWindow.xaml;DialogWindow\RenameWindow.xaml;GenproDesignDictionary.xaml;
 
 False

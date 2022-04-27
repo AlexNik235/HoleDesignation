@@ -1,0 +1,42 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
+    "projectName": "GENPRO_Design",
+    "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
+    "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\locaNugets": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "dependencies": {
+        "MaterialDesignColors": {
+          "target": "Package",
+          "version": "[2.0.3, )"
+        },
+        "MaterialDesignThemes": {
+          "target": "Package",
+          "version": "[4.2.1, )"
+        }
+      }
+    }
+  },
+  "runtimes": {
+    "win-x64": {
+      "#import": []
+    }
+  }
+}

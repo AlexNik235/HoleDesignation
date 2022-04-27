@@ -17,6 +17,8 @@
     /// </summary>
     public class GeometryService
     {
+        private const int CountLineInRoundCountur = 2;
+        private const int Half = 2;
         private readonly UIDocument _uiDoc;
 
         /// <summary>
@@ -113,21 +115,21 @@
             {
                 Height = Math.Abs(orderByY.Last().Y - orderByY.First().Y),
                 Width = Math.Abs(orderByX.Last().X - orderByX.First().X),
-                Type = edgeArray.Size > 2 ? ContourType.Rectangle : ContourType.Round
+                Type = edgeArray.Size > CountLineInRoundCountur ? ContourType.Rectangle : ContourType.Round,
+                IsValid = CheckShapeValid(edgeArray)
             };
 
-            var botLine = curves.OrderBy(i => i.GetEndPoint(0).Y + i.GetEndPoint(1).Y).FirstOrDefault();
-            if (data.Type == ContourType.Rectangle && botLine is Line line)
-            {
-                data.Angle = line.Direction.Normalize().AngleTo(XYZ.BasisX);
-            }
+            if (!data.IsValid)
+                return data;
 
             data.CentralPoint = new XYZ(
-                orderByX.First().X + data.Width / 2,
-                orderByY.First().Y + data.Height / 2,
+                orderByX.First().X + data.Width / Half,
+                orderByY.First().Y + data.Height / Half,
                 points.First().Z);
 
-            return data;
+            return data.Type == ContourType.Rectangle
+                ? AnalyzeRectangleContour(edgeArray, data)
+                : data;
         }
 
         /// <summary>
@@ -207,15 +209,75 @@
             return null;
         }
 
-        private bool IsSolidIntersected(Solid fistSolid, Solid secondSolid)
+        private double GetAngle(Line line)
+        {
+            var dirVector = line.AntiClockWizeDirectionLine().Direction.Normalize();
+            return XYZ.BasisX.AngleTo(dirVector);
+        }
+
+        private ContourData AnalyzeRectangleContour(EdgeArray edgeArray, ContourData data)
+        {
+            var botLine = edgeArray.OfType<Edge>().Select(i => i.AsCurve()).OfType<Line>()
+                .FirstOrDefault(l =>
+                {
+                    var rightLineDirection =
+                        l.AntiClockWizeDirectionLine().Direction.Normalize().CrossProduct(XYZ.BasisZ);
+                    return rightLineDirection.X >= 0 && rightLineDirection.Y < 0;
+                });
+
+            var sideLine = edgeArray.OfType<Edge>().Select(i => i.AsCurve()).OfType<Line>()
+                .FirstOrDefault(l =>
+                {
+                    var rightLineDirection =
+                        l.AntiClockWizeDirectionLine().Direction.Normalize().CrossProduct(XYZ.BasisZ);
+                    return rightLineDirection.X >= 0 && rightLineDirection.Y > 0;
+                });
+
+            if (botLine == null || sideLine == null)
+            {
+                data.IsValid = false;
+                return data;
+            }
+
+            data.Angle = GetAngle(botLine);
+            data.Height = sideLine.ApproximateLength;
+            data.Width = botLine.ApproximateLength;
+
+            return data;
+        }
+
+        private bool CheckShapeValid(EdgeArray edgeArray)
+        {
+            if (edgeArray.Size < 3)
+                return true;
+
+            for (var i = 1; i < edgeArray.Size; i++)
+            {
+                var prevLine = (Line)edgeArray.get_Item(i - 1).AsCurve();
+                var curLine = (Line)edgeArray.get_Item(i).AsCurve();
+                var angle = prevLine.Direction.Normalize().AngleTo(curLine.Direction.Normalize());
+                if (Math.Abs(Math.PI / 2 - Math.Abs(angle)) > PluginSettings.Tolerance
+                    && Math.Abs(Math.PI - Math.Abs(angle)) > PluginSettings.Tolerance)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private bool IsSolidIntersected(Solid fistSolid, Solid windowSolid)
         {
             try
             {
+                if (windowSolid == null || fistSolid == null)
+                    return false;
+
                 var newSolid =
                     BooleanOperationsUtils.ExecuteBooleanOperation(
-                        fistSolid, secondSolid, BooleanOperationsType.Union);
+                        fistSolid, windowSolid, BooleanOperationsType.Union);
 
-                return Math.Abs(newSolid.Volume - fistSolid.Volume - secondSolid.Volume) > PluginSettings.Tolerance;
+                return Math.Abs(newSolid.Volume - fistSolid.Volume - windowSolid.Volume) > PluginSettings.Tolerance;
             }
             catch
             {

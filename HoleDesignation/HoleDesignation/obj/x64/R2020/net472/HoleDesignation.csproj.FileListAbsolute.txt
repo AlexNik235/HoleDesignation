@@ -1,0 +1,15 @@
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\HoleDesignation.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\CSharpFunctionalExtensions.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\MaterialDesignColors.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\MaterialDesignThemes.Wpf.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\GENPRO_Design.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\GENPRO_Design.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.pdb

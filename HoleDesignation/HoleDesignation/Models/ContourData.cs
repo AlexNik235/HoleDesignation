@@ -32,5 +32,10 @@
         /// Угол поворота отверстия
         /// </summary>
         public double Angle { get; set; } = 0;
+
+        /// <summary>
+        /// Является ли форма валидной
+        /// </summary>
+        public bool IsValid { get; set; }
     }
 }

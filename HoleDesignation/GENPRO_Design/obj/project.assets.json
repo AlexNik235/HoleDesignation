@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
+    ".NETFramework,Version=v4.7.2": {
       "MaterialDesignColors/2.0.3": {
         "type": "package",
         "compile": {
@@ -27,7 +27,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-x64": {
+    ".NETFramework,Version=v4.7.2/win-x64": {
       "MaterialDesignColors/2.0.3": {
         "type": "package",
         "compile": {
@@ -112,49 +112,43 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
+    ".NETFramework,Version=v4.7.2": [
       "MaterialDesignColors >= 2.0.3",
       "MaterialDesignThemes >= 4.2.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikitenkoaa\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Undea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
+      "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
       "projectName": "GENPRO_Design",
-      "projectPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
-      "packagesPath": "C:\\Users\\nikitenkoaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\obj\\",
+      "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj",
+      "packagesPath": "C:\\Users\\Undea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\obj\\",
       "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nikitenkoaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Undea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net48"
+        "net472"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\nikitenkoaa\\Desktop\\Тестовые проекты\\RevitNuke\\RevitNuke\\RevitBuildProject\\bin\\Debug": {},
+        "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\locaNugets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net48": {
+        "net472": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net48": {
+      "net472": {
         "dependencies": {
           "MaterialDesignColors": {
             "target": "Package",
