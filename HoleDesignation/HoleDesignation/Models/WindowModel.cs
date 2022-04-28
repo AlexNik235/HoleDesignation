@@ -11,7 +11,7 @@
     /// </summary>
     public class WindowModel
     {
-        private Lazy<Solid> _solid;
+        private readonly Lazy<Solid> _solid;
 
         /// <summary>
         /// ctor

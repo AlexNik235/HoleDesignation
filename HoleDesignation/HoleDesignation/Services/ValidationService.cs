@@ -52,13 +52,17 @@
                 var allProfileLines = new List<Line>();
                 foreach (var curveArray in sketch.Profile.OfType<CurveArray>())
                 {
-                    allProfileLines.AddRange(curveArray.OfType<Line>().Select(i => i.AntiClockWizeDirectionLine()));
+                    var curves = curveArray.OfType<Line>().ToList();
+                    var centralPoint = curves.GetCentralPoint();
+                    allProfileLines.AddRange(curves.Select(i => i.AntiClockWizeDirectionLine(centralPoint)));
                 }
 
                 var outSideCurves = 0;
                 foreach (CurveArray curveArray in sketch.Profile)
                 {
-                    var lines = curveArray.OfType<Line>().Select(i => i.AntiClockWizeDirectionLine()).ToList();
+                    var curves = curveArray.OfType<Line>().ToList();
+                    var centralPoint = curves.GetCentralPoint();
+                    var lines = curves.Select(i => i.AntiClockWizeDirectionLine(centralPoint)).ToList();
                     if (!lines.All(l => HasIntersect(l, allProfileLines)))
                         outSideCurves++;
                 }
@@ -75,7 +79,7 @@
         {
             var firstPoint = line.GetEndPoint(0);
             var secondPoint = line.GetEndPoint(1);
-            var rightDirection = line.Direction.Normalize().CrossProduct(-XYZ.BasisZ);
+            var rightDirection = line.Direction.Normalize().CrossProduct(XYZ.BasisZ);
             var centralPoint = line.Evaluate(line.ApproximateLength / 2, false);
             var secondRayPoint = centralPoint + rightDirection * 10000;
             var ray = Line.CreateBound(centralPoint, secondRayPoint);
@@ -83,7 +87,7 @@
             {
                 var firs = comparisonLine.GetEndPoint(0);
                 var sec = comparisonLine.GetEndPoint(1);
-                if (firstPoint.IsAlmostEqualTo(firs, PluginSettings.Tolerance) 
+                if (firstPoint.IsAlmostEqualTo(firs, PluginSettings.Tolerance)
                     && secondPoint.IsAlmostEqualTo(sec, PluginSettings.Tolerance))
                     continue;
 

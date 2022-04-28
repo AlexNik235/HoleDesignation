@@ -1,7 +1,7 @@
 ﻿namespace HoleDesignation.Models
 {
     using Autodesk.Revit.DB;
-    using HoleDesignation.Enums;
+    using Enums;
 
     /// <summary>
     /// Данные о контуре

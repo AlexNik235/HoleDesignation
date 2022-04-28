@@ -1,0 +1,15 @@
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\HoleDesignation.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\CSharpFunctionalExtensions.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\MaterialDesignColors.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\MaterialDesignThemes.Wpf.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\GENPRO_Design.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2022\net48\GENPRO_Design.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2022\net48\HoleDesignation.pdb

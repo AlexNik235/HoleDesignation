@@ -49,8 +49,8 @@
         {
             try
             {
-                var referance = _uiDoc.Selection.PickObject(ObjectType.Element, new FloorSelection());
-                var floor = _uiDoc.Document.GetElement(referance.ElementId) as Floor;
+                var reference = _uiDoc.Selection.PickObject(ObjectType.Element, new FloorSelection());
+                var floor = _uiDoc.Document.GetElement(reference.ElementId) as Floor;
                 return floor ?? Result.Failure<Floor>("Не удалось выбрать плиту");
             }
             catch (Autodesk.Revit.Exceptions.OperationCanceledException)

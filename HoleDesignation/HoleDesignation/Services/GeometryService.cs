@@ -31,7 +31,7 @@
         }
 
         /// <summary>
-        /// Получить внутренние контура из плиты
+        /// Получает внутренние контура из плиты
         /// </summary>
         /// <param name="floor">Плита перекрытия</param>
         /// <returns>Список контуров</returns>
@@ -128,7 +128,7 @@
                 points.First().Z);
 
             return data.Type == ContourType.Rectangle
-                ? AnalyzeRectangleContour(edgeArray, data)
+                ? AnalyzeRectangleContour(edgeArray, data, data.CentralPoint)
                 : data;
         }
 
@@ -209,19 +209,19 @@
             return null;
         }
 
-        private double GetAngle(Line line)
+        private double GetAngle(Line line, XYZ centralPoint)
         {
-            var dirVector = line.AntiClockWizeDirectionLine().Direction.Normalize();
+            var dirVector = line.AntiClockWizeDirectionLine(centralPoint).Direction.Normalize();
             return XYZ.BasisX.AngleTo(dirVector);
         }
 
-        private ContourData AnalyzeRectangleContour(EdgeArray edgeArray, ContourData data)
+        private ContourData AnalyzeRectangleContour(EdgeArray edgeArray, ContourData data, XYZ centralPoint)
         {
             var botLine = edgeArray.OfType<Edge>().Select(i => i.AsCurve()).OfType<Line>()
                 .FirstOrDefault(l =>
                 {
                     var rightLineDirection =
-                        l.AntiClockWizeDirectionLine().Direction.Normalize().CrossProduct(XYZ.BasisZ);
+                        l.AntiClockWizeDirectionLine(centralPoint).Direction.Normalize().CrossProduct(XYZ.BasisZ);
                     return rightLineDirection.X >= 0 && rightLineDirection.Y < 0;
                 });
 
@@ -229,8 +229,8 @@
                 .FirstOrDefault(l =>
                 {
                     var rightLineDirection =
-                        l.AntiClockWizeDirectionLine().Direction.Normalize().CrossProduct(XYZ.BasisZ);
-                    return rightLineDirection.X >= 0 && rightLineDirection.Y > 0;
+                        l.AntiClockWizeDirectionLine(centralPoint).Direction.Normalize().CrossProduct(XYZ.BasisZ);
+                    return rightLineDirection.X > 0 && rightLineDirection.Y >= 0;
                 });
 
             if (botLine == null || sideLine == null)
@@ -239,7 +239,7 @@
                 return data;
             }
 
-            data.Angle = GetAngle(botLine);
+            data.Angle = GetAngle(botLine, centralPoint);
             data.Height = sideLine.ApproximateLength;
             data.Width = botLine.ApproximateLength;
 
