@@ -27,12 +27,14 @@
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "dependencies": {
             "MaterialDesignColors": {
               "target": "Package",
@@ -77,6 +79,7 @@
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {
               "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj": {
                 "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj"
@@ -92,6 +95,7 @@
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "dependencies": {
             "Autodesk.Revit.SDK": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",

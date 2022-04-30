@@ -60,3 +60,5 @@ C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\
 C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignColors.pdb
 C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.dll
 C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_85c212fd-59cc-4002-99c7-253bc91964fb\bin\GENPRO_Design.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_85c212fd-59cc-4002-99c7-253bc91964fb\bin\GENPRO_Design.pdb

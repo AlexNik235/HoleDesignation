@@ -51,5 +51,10 @@
         /// Погрешность
         /// </summary>
         public static double Tolerance { get; set; } = 0.000001;
+
+        /// <summary>
+        /// Число до которого производить округление
+        /// </summary>
+        public static int RoundValue { get; set; } = 6;
     }
 }

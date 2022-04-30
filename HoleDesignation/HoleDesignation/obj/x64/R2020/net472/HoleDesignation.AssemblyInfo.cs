@@ -13,7 +13,6 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoleDesignation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("R2020")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("2020")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoleDesignation")]

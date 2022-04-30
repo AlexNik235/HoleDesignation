@@ -8,6 +8,7 @@
     using CSharpFunctionalExtensions;
     using Enums;
     using Extensions;
+    using Helpers;
     using Models;
     using Models.Parameters;
     using Result = CSharpFunctionalExtensions.Result;
@@ -217,21 +218,15 @@
 
         private ContourData AnalyzeRectangleContour(EdgeArray edgeArray, ContourData data, XYZ centralPoint)
         {
-            var botLine = edgeArray.OfType<Edge>().Select(i => i.AsCurve()).OfType<Line>()
-                .FirstOrDefault(l =>
-                {
-                    var rightLineDirection =
-                        l.AntiClockWizeDirectionLine(centralPoint).Direction.Normalize().CrossProduct(XYZ.BasisZ);
-                    return rightLineDirection.X >= 0 && rightLineDirection.Y < 0;
-                });
+            var lines = edgeArray.OfType<Edge>().Select(i => i.AsCurve()).OfType<Line>()
+                .Select(i => i.AntiClockWizeDirectionLine(centralPoint)).ToList();
+            var points = lines.SelectMany(i => i.Tessellate()).ToList();
+            var minYxPoint = points.OrderBy(x => x, new PointComparer()).LastOrDefault();
 
-            var sideLine = edgeArray.OfType<Edge>().Select(i => i.AsCurve()).OfType<Line>()
-                .FirstOrDefault(l =>
-                {
-                    var rightLineDirection =
-                        l.AntiClockWizeDirectionLine(centralPoint).Direction.Normalize().CrossProduct(XYZ.BasisZ);
-                    return rightLineDirection.X > 0 && rightLineDirection.Y >= 0;
-                });
+            var commonLine = lines.Where(i => ContainsPoint(i, minYxPoint))
+                .OrderBy(i => i.Tessellate().Sum(p => p.Y)).ToList();
+            var botLine = commonLine.First();
+            var sideLine = commonLine.Last();
 
             if (botLine == null || sideLine == null)
             {
@@ -244,6 +239,30 @@
             data.Width = botLine.ApproximateLength;
 
             return data;
+        }
+
+        private bool ContainsPoint(Line line, XYZ checkPoint)
+        {
+            var lineFirstPoint = line.GetEndPoint(0);
+            var lineSecPoint = line.GetEndPoint(1);
+
+            return lineFirstPoint.IsAlmostEqualTo(checkPoint, PluginSettings.Tolerance) ||
+                   lineSecPoint.IsAlmostEqualTo(checkPoint, PluginSettings.Tolerance);
+        }
+
+        private bool CheckSideLine(Line botLine, Line checkLine)
+        {
+            var botLineFirP = botLine.GetEndPoint(0);
+            var botLineSecP = botLine.GetEndPoint(1);
+            var checkLineFirP = checkLine.GetEndPoint(0);
+            var checkLineSecP = checkLine.GetEndPoint(1);
+
+            if (botLineFirP.IsAlmostEqualTo(checkLineFirP, PluginSettings.Tolerance)
+                && botLineSecP.IsAlmostEqualTo(checkLineSecP, PluginSettings.Tolerance))
+                return false;
+
+            return botLineFirP.IsAlmostEqualTo(checkLineFirP, PluginSettings.Tolerance)
+                   || botLineSecP.IsAlmostEqualTo(checkLineSecP, PluginSettings.Tolerance);
         }
 
         private bool CheckShapeValid(EdgeArray edgeArray)
