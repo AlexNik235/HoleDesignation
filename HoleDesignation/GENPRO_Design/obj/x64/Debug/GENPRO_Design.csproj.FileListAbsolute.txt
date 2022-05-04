@@ -62,3 +62,28 @@ C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\
 C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\GENPRO_Design\bin\R2020\MaterialDesignThemes.Wpf.pdb
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_85c212fd-59cc-4002-99c7-253bc91964fb\bin\GENPRO_Design.dll
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_85c212fd-59cc-4002-99c7-253bc91964fb\bin\GENPRO_Design.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_ee490b81-d057-47e3-93ca-d1ff9945f46f\bin\GENPRO_Design.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_ee490b81-d057-47e3-93ca-d1ff9945f46f\bin\GENPRO_Design.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\InputWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GenproDesignDictionary.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CommonInfoWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CreateNameWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\GenproProgressBarWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\InputWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\QuestionWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\RenameWindow.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design_MarkupCompile.lref
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CommonInfoWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\CreateNameWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\GenproProgressBarWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\QuestionWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\DialogWindow\RenameWindow.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.g.resources
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.Properties.GenproResource.resources
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.GenerateResource.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\GENPRO_Design\obj\x64\Debug\GENPRO_Design.pdb

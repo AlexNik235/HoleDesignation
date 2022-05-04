@@ -256,11 +256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+      "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
       "projectName": "HoleDesignation",
-      "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+      "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
       "packagesPath": "C:\\Users\\Undea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\obj\\",
+      "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\HoleDesignation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -281,8 +281,8 @@
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj": {
-              "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj"
+            "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj": {
+              "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\GENPRO_Design\\GENPRO_Design.csproj"
             }
           }
         }

@@ -34,32 +34,72 @@
         /// Получает предварительно выбранное перекрытие 
         /// </summary>
         /// <returns>Перекрытие</returns>
-        public Result<Floor> GetPreSelectedFloor()
+        public Result<FloorWrapper> GetPreSelectedFloor()
         {
             var selectedFloor = _uiDoc.Selection.GetElementIds()
                 .Select(id => _uiDoc.Document.GetElement(id)).OfType<Floor>().FirstOrDefault();
-            return selectedFloor ?? Result.Failure<Floor>("Не выбрано перекрытие");
+            return selectedFloor != null
+                ? new FloorWrapper(selectedFloor)
+                : Result.Failure<FloorWrapper>("Не выбрано перекрытие");
         }
 
         /// <summary>
         /// Выбирает перекрытие
         /// </summary>
         /// <returns>Перекрытие</returns>
-        public Result<Floor> SelectFloor()
+        public Result<FloorWrapper> SelectFloor()
         {
             try
             {
                 var reference = _uiDoc.Selection.PickObject(ObjectType.Element, new FloorSelection());
-                var floor = _uiDoc.Document.GetElement(reference.ElementId) as Floor;
-                return floor ?? Result.Failure<Floor>("Не удалось выбрать плиту");
+                return _uiDoc.Document.GetElement(reference.ElementId) is Floor floor
+                    ? new FloorWrapper(floor)
+                    : Result.Failure<FloorWrapper>("Не удалось выбрать плиту");
             }
             catch (Autodesk.Revit.Exceptions.OperationCanceledException)
             {
-                return Result.Failure<Floor>($"Пользователь отменил выбор плиты");
+                return Result.Failure<FloorWrapper>("Пользователь отменил выбор плиты");
             }
             catch (Exception e)
             {
-                return Result.Failure<Floor>($"При выборе элемента возникла непредвиденная ошибка: {e.Message}");
+                return Result.Failure<FloorWrapper>($"При выборе элемента возникла непредвиденная ошибка: {e.Message}");
+            }
+        }
+
+        /// <summary>
+        /// Получить перекрытие из связанного файла
+        /// </summary>
+        /// <returns></returns>
+        public Result<FloorWrapper> SelectFloorFromLinkedDoc()
+        {
+            try
+            {
+                var linkedInstances = new FilteredElementCollector(_uiDoc.Document)
+                    .WhereElementIsNotElementType()
+                    .OfClass(typeof(RevitLinkInstance))
+                    .Cast<RevitLinkInstance>()
+                    .Where(i => i.GetLinkDocument() != null)
+                    .ToList();
+                var reference = _uiDoc.Selection.PickObject(ObjectType.LinkedElement);
+                var linkedFile =
+                    linkedInstances.FirstOrDefault(linkInstance => linkInstance.Id.Equals(reference.ElementId));
+                if (linkedFile == null)
+                {
+                    return Result.Failure<FloorWrapper>(
+                        "Не удалось определить экземпляр связанного файла для выбранной плиты");
+                }
+
+                return linkedFile.GetLinkDocument().GetElement(reference.LinkedElementId) is Floor floor
+                    ? new FloorWrapper(floor, linkedFile)
+                    : Result.Failure<FloorWrapper>("Данный элемент не является перекрытием, выберите перекрытие");
+            }
+            catch (Autodesk.Revit.Exceptions.OperationCanceledException)
+            {
+                return Result.Failure<FloorWrapper>("Пользователь отменил выбор плиты");
+            }
+            catch (Exception e)
+            {
+                return Result.Failure<FloorWrapper>($"При выборе элемента возникла непредвиденная ошибка: {e.Message}");
             }
         }
 
@@ -97,13 +137,17 @@
         /// </summary>
         /// <param name="floor">Плита</param>
         /// <returns>Список окон</returns>
-        public Result<List<WindowModel>> GetWindowsFromFloor(Floor floor)
+        public Result<List<WindowModel>> GetWindowsFromFloor(FloorWrapper floor)
         {
+            var outLine = GetOutLine(floor, 0);
+            if (outLine == null)
+            {
+                return Result.Failure<List<WindowModel>>("Не удалось определить outline для выбора семейств окон");
+            }
+
             return Result.Try(
                 () =>
                 {
-                    var floorBb = floor.get_BoundingBox(null);
-                    var outLine = new Outline(floorBb.Min, floorBb.Max);
                     return new FilteredElementCollector(_uiDoc.Document)
                         .WhereElementIsNotElementType()
                         .WherePasses(new BoundingBoxIntersectsFilter(outLine))
@@ -116,6 +160,44 @@
                 },
                 e =>
                     $"Не удалось получить отверстия категории \"Окна\", которые образуют плиту по причине: {e.Message}");
+        }
+
+        private Outline GetOutLine(FloorWrapper floorWrapper, double extraDistance)
+        {
+            try
+            {
+                var bb = floorWrapper.Element.get_BoundingBox(null);
+                var delta = bb.Max - bb.Min;
+                if (delta.GetLength() < PluginSettings.OneFt)
+                    return null;
+
+                var boxLine = Line.CreateBound(bb.Min, bb.Max);
+                Outline outLine;
+
+                if (floorWrapper.RevitLinkInstance != null)
+                {
+                    var transform = floorWrapper.RevitLinkInstance.GetTransform();
+                    var elementGeometry = floorWrapper.Element.get_Geometry(new Options { DetailLevel = ViewDetailLevel.Fine });
+                    var transformedGeometry = elementGeometry.GetTransformed(transform.Inverse);
+                    var transformedBb = transformedGeometry.GetBoundingBox();
+
+                    outLine = new Outline(
+                        transformedBb.Min - boxLine.Direction * extraDistance,
+                        transformedBb.Max + boxLine.Direction * extraDistance);
+                }
+                else
+                {
+                    outLine = new Outline(
+                        bb.Min - boxLine.Direction * extraDistance,
+                        bb.Max + boxLine.Direction * extraDistance);
+                }
+
+                return outLine;
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }

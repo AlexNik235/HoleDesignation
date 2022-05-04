@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UOkar3p8WLCXAjcpdr5y+ASdTjCs+vKpKpDfEbUksOxhMcPlwrf6pfTdGlBAGiSSNLn9ZtTN39gReR3xa6tDGQ==",
+  "dgSpecHash": "tuGdIAHGpO5AQlBm3KwSarimFvs7bxVlFXAuxD11Hp7z8XI78j8F+K7g8ipjGh8VZ/r1i3Q9HoF/Dji6KMC+IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
+  "projectFilePath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\HoleDesignation\\HoleDesignation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Undea\\.nuget\\packages\\autodesk.revit.sdk\\2020.2.1\\autodesk.revit.sdk.2020.2.1.nupkg.sha512",
     "C:\\Users\\Undea\\.nuget\\packages\\csharpfunctionalextensions\\2.29.0\\csharpfunctionalextensions.2.29.0.nupkg.sha512",

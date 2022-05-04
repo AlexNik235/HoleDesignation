@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2wiSTt0y7fV3d6ljKb5F+baCGxDHZRIXGEonoXJkYnFBShLADvCYrIiEG4a7sNaIjO3RynTWErqE7HKZCKgAhQ==",
+  "dgSpecHash": "f61n+WJOAqkdI2HCFvT77RdM2qZb2OVruM5V1jt12VpzqTe6WehhwnDq8L7LNUqGxGS2tz2X/d1XtAGaZnBwkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\_build.csproj",
+  "projectFilePath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\build\\_build.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Undea\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
     "C:\\Users\\Undea\\.nuget\\packages\\glob\\1.1.8\\glob.1.1.8.nupkg.sha512",

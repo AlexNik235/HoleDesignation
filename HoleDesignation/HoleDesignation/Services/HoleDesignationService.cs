@@ -45,21 +45,22 @@
             transactionGroup.Start();
             var result = _validationService.IsViewPlan()
                 .Bind(() => _getElementService.GetPreSelectedFloor()
-                    .OnFailureCompensate(() => _getElementService.SelectFloor()))
+                    .OnFailureCompensate(() => _getElementService.SelectFloor())
+                    .OnFailureCompensate(() => _getElementService.SelectFloorFromLinkedDoc()))
 
                 .Bind(floor => _validationService.ValidateByContourCount(floor)
                     .Bind(() => _getElementService.GetWindowsFromFloor(floor)
                         .Bind(windows => _geometryService.GetInsideСontourFromFloor(floor)
                             .Bind(edgeArr => _geometryService.FiltrateContoursByWindowsInstance(edgeArr, windows))))
-                .Tap(res => edgeArrays = res)
+                    .Tap(res => edgeArrays = res)
 
-                .Bind(_ => _getElementService.GetFamilySymbolByFamilyName(PluginSettings.DesignationRoundFamily))
-                .Tap(res => roundFamilySymbol = res)
+                    .Bind(_ => _getElementService.GetFamilySymbolByFamilyName(PluginSettings.DesignationRoundFamily))
+                    .Tap(res => roundFamilySymbol = res)
 
-                .Bind(_ => _getElementService.GetFamilySymbolByFamilyName(PluginSettings.DesignationRectangleFamily))
-                .Tap(res => rectangleFamilySymbol = res)
+                    .Bind(_ => _getElementService.GetFamilySymbolByFamilyName(PluginSettings.DesignationRectangleFamily))
+                    .Tap(res => rectangleFamilySymbol = res)
 
-                .Bind(_ => CreateDesignationInstances(edgeArrays, roundFamilySymbol, rectangleFamilySymbol)));
+                    .Bind(_ => CreateDesignationInstances(edgeArrays, roundFamilySymbol, rectangleFamilySymbol)));
 
             transactionGroup.Assimilate();
 

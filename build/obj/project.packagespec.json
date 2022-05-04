@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\_build.csproj",
+    "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\build\\_build.csproj",
     "projectName": "_build",
-    "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\_build.csproj",
-    "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\HoleDesignation\\build\\obj\\",
+    "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\build\\_build.csproj",
+    "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\build\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

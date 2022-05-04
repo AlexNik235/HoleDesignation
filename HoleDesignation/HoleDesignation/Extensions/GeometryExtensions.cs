@@ -93,7 +93,7 @@
         /// <summary>
         /// Получает новую линию с направлением против часовой стрелки
         /// </summary>
-        /// <param name="line">Линия</param>
+        /// <param name="line">Кривая</param>
         /// <param name="centralPoint">Центральная точка</param>
         /// <returns>Новая линия</returns>
         public static Line AntiClockWizeDirectionLine(this Line line, XYZ centralPoint)

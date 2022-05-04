@@ -6,7 +6,8 @@
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
     using Extensions;
-    using HoleDesignation.Models.Parameters;
+    using Models;
+    using Models.Parameters;
     using Result = CSharpFunctionalExtensions.Result;
 
     /// <summary>
@@ -40,19 +41,21 @@
         /// Проверяет более одного контура в перекрытии
         /// </summary>
         /// <param name="floor">Перекрытие</param>
-        public Result ValidateByContourCount(Floor floor)
+        public Result ValidateByContourCount(FloorWrapper floor)
         {
             try
             {
-                var sketchId = floor.GetDependentElements(new ElementClassFilter(typeof(Sketch))).FirstOrDefault();
+                var sketchId = floor.Element.GetDependentElements(new ElementClassFilter(typeof(Sketch))).FirstOrDefault();
                 if (sketchId == null)
                     return Result.Success();
 
-                var sketch = (Sketch)_uiDoc.Document.GetElement(sketchId);
+                var sketch = (Sketch)floor.Doc.GetElement(sketchId);
                 var allProfileLines = new List<Line>();
                 foreach (var curveArray in sketch.Profile.OfType<CurveArray>())
                 {
                     var curves = curveArray.OfType<Line>().ToList();
+                    if (!curves.Any())
+                        continue;
                     var centralPoint = curves.GetCentralPoint();
                     allProfileLines.AddRange(curves.Select(i => i.AntiClockWizeDirectionLine(centralPoint)));
                 }
@@ -61,6 +64,8 @@
                 foreach (CurveArray curveArray in sketch.Profile)
                 {
                     var curves = curveArray.OfType<Line>().ToList();
+                    if (!curves.Any())
+                        continue;
                     var centralPoint = curves.GetCentralPoint();
                     var lines = curves.Select(i => i.AntiClockWizeDirectionLine(centralPoint)).ToList();
                     if (!lines.All(l => HasIntersect(l, allProfileLines)))

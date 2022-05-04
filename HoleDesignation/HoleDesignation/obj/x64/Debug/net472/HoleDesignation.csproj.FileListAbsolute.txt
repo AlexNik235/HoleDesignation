@@ -23,3 +23,13 @@ C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\
 C:\Users\Undea\OneDrive\Рабочий стол\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\GENPRO_Design.pdb
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_85c212fd-59cc-4002-99c7-253bc91964fb\bin\HoleDesignation.dll
 C:\Users\Undea\AppData\Local\Temp\RxBim_build_85c212fd-59cc-4002-99c7-253bc91964fb\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_ee490b81-d057-47e3-93ca-d1ff9945f46f\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_ee490b81-d057-47e3-93ca-d1ff9945f46f\bin\HoleDesignation.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.pdb

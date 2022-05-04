@@ -36,15 +36,19 @@
         /// </summary>
         /// <param name="floor">Плита перекрытия</param>
         /// <returns>Список контуров</returns>
-        public Result<List<EdgeArray>> GetInsideСontourFromFloor(Floor floor)
+        public Result<List<EdgeArray>> GetInsideСontourFromFloor(FloorWrapper floor)
         {
-            if (!floor.Document.Title.Equals(_uiDoc.Document.Title))
-            {
-                return Result.Failure<List<EdgeArray>>(
-                    "На данный момент работа с плитами из связанного файла недоступна");
-            }
+            var biggestFace = floor.Solid.Faces.OfType<Face>().OrderByDescending(f => f.Area).Take(2)
+                .OrderBy(
+                    i =>
+                    {
+                        if (i is PlanarFace planarFace)
+                            return Math.Round(planarFace.Origin.Z, PluginSettings.RoundValue);
+                        if (i is CylindricalFace cylindricalFace)
+                            return Math.Round(cylindricalFace.Origin.Z, PluginSettings.RoundValue);
+                        return 0;
+                    }).LastOrDefault();
 
-            var biggestFace = floor.GetSolid().Faces.OfType<Face>().OrderBy(f => f.Area).LastOrDefault();
             if (biggestFace == null)
                 return Result.Failure<List<EdgeArray>>("Не удалось определить большую из поверхностей плиты");
 
@@ -67,7 +71,8 @@
             return Result.Try(
                 () =>
                 {
-                    if (!windows.Any())
+                    var filtrateWindows = windows.Where(i => i.Solid != null).ToList();
+                    if (!filtrateWindows.Any())
                         return edgesArrays;
                     var transaction = new Transaction(_uiDoc.Document, "Создание солидов для сравнения контуров");
                     transaction.Start();
@@ -85,7 +90,7 @@
                         if (edgeSolid == null)
                             continue;
 
-                        if (!windows.Any(window => IsSolidIntersected(edgeSolid, window.Solid)))
+                        if (!filtrateWindows.Any(window => IsSolidIntersected(edgeSolid, window.Solid)))
                         {
                             resultList.Add(edgeArray);
                         }
@@ -165,49 +170,20 @@
         {
             if (curves.Count < 2)
                 return null;
+            var curveLoop = new CurveLoop();
+            var points = curves.SelectMany(i => i.Tessellate()).ToList();
+            var orderByX = points.OrderBy(i => i.X).ToList();
+            var orderByY = points.OrderBy(i => i.Y).ToList();
+            var topRightPoint = new XYZ(orderByX.Last().X, orderByY.Last().Y, orderByX.Last().Z);
+            var topLeftPoint = new XYZ(orderByX.First().X, orderByY.Last().Y, orderByX.Last().Z);
+            var botLeftPoint = new XYZ(orderByX.First().X, orderByY.First().Y, orderByX.Last().Z);
+            var botRightPoint = new XYZ(orderByX.Last().X, orderByY.First().Y, orderByX.Last().Z);
 
-            var currentCurve = curves.First();
-            var usedCurveList = new List<Curve>
-            {
-                currentCurve
-            };
-            var linkedLines = new List<Curve>
-            {
-                currentCurve
-            };
-            while (usedCurveList.Count < curves.Count)
-            {
-                var lastPoint = currentCurve.GetEndPoint(1);
-                foreach (var cur in curves.Where(c => !c.Equals(currentCurve) && !usedCurveList.Contains(c)))
-                {
-                    var firstCurPoint = cur.GetEndPoint(0);
-                    var lastCurPoint = cur.GetEndPoint(1);
-                    if (lastPoint.IsAlmostEqualTo(firstCurPoint, PluginSettings.Tolerance))
-                    {
-                        usedCurveList.Add(currentCurve);
-                        currentCurve = cur;
-                        linkedLines.Add(currentCurve);
-                        break;
-                    }
-
-                    if (!lastPoint.IsAlmostEqualTo(lastCurPoint, PluginSettings.Tolerance))
-                        continue;
-                    usedCurveList.Add(currentCurve);
-                    currentCurve = cur;
-                    linkedLines.Add(currentCurve);
-                    break;
-                }
-
-                if (!IsLoopIsClose(linkedLines))
-                    continue;
-                {
-                    var curveLoop = new CurveLoop();
-                    linkedLines.ForEach(c => curveLoop.Append(c));
-                    return curveLoop;
-                }
-            }
-
-            return null;
+            curveLoop.Append(Line.CreateBound(botLeftPoint, botRightPoint));
+            curveLoop.Append(Line.CreateBound(botRightPoint, topRightPoint));
+            curveLoop.Append(Line.CreateBound(topRightPoint, topLeftPoint));
+            curveLoop.Append(Line.CreateBound(topLeftPoint, botLeftPoint));
+            return curveLoop;
         }
 
         private double GetAngle(Line line, XYZ centralPoint)
@@ -250,21 +226,6 @@
                    lineSecPoint.IsAlmostEqualTo(checkPoint, PluginSettings.Tolerance);
         }
 
-        private bool CheckSideLine(Line botLine, Line checkLine)
-        {
-            var botLineFirP = botLine.GetEndPoint(0);
-            var botLineSecP = botLine.GetEndPoint(1);
-            var checkLineFirP = checkLine.GetEndPoint(0);
-            var checkLineSecP = checkLine.GetEndPoint(1);
-
-            if (botLineFirP.IsAlmostEqualTo(checkLineFirP, PluginSettings.Tolerance)
-                && botLineSecP.IsAlmostEqualTo(checkLineSecP, PluginSettings.Tolerance))
-                return false;
-
-            return botLineFirP.IsAlmostEqualTo(checkLineFirP, PluginSettings.Tolerance)
-                   || botLineSecP.IsAlmostEqualTo(checkLineSecP, PluginSettings.Tolerance);
-        }
-
         private bool CheckShapeValid(EdgeArray edgeArray)
         {
             if (edgeArray.Size < 3)
@@ -303,16 +264,6 @@
                 // при пересечении солидов часто возникает ошибка, по причине что возможно их размеры идентично равны
                 return true;
             }
-        }
-
-        private bool IsLoopIsClose(List<Curve> curves)
-        {
-            var fistLine = curves.FirstOrDefault();
-            var lastLine = curves.LastOrDefault();
-            if (fistLine == null || lastLine == null)
-                return false;
-
-            return fistLine.GetEndPoint(0).IsAlmostEqualTo(lastLine.GetEndPoint(1), PluginSettings.Tolerance);
         }
     }
 }
