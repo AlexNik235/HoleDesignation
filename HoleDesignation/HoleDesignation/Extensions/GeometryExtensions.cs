@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using Autodesk.Revit.DB;
+    using HoleDesignation.Models.Parameters;
 
     /// <summary>
     /// Расширения для геометрии
@@ -37,7 +38,7 @@
 
             foreach (var geometryElement in geometry)
             {
-                if (geometryElement is Solid solid)
+                if (geometryElement is Solid solid && solid.Volume > PluginSettings.Tolerance)
                 {
                     solids.Add(solid);
                 }
@@ -91,6 +92,32 @@
         }
 
         /// <summary>
+        /// Смещает кривую
+        /// </summary>
+        /// <param name="curve">Кривая</param>
+        /// <param name="direction">Направление смещения</param>
+        /// <param name="offSet">Величина смещения</param>
+        /// <returns>Новая кривая</returns>
+        public static Curve MoveCurve(this Curve curve, XYZ direction, double offSet)
+        {
+            switch (curve)
+            {
+                case Arc arc:
+                    var pointOn = arc.Tessellate().Skip(1).FirstOrDefault();
+                    return Arc.Create(
+                        arc.GetEndPoint(0) + direction * offSet,
+                        arc.GetEndPoint(1) + direction * offSet,
+                        pointOn + direction * offSet);
+                case Line line:
+                    return Line.CreateBound(
+                        line.GetEndPoint(0) + direction * offSet,
+                        line.GetEndPoint(1) + direction * offSet);
+            }
+
+            return null;
+        }
+
+        /// <summary>
         /// Получает новую линию с направлением против часовой стрелки
         /// </summary>
         /// <param name="line">Кривая</param>
@@ -134,10 +161,12 @@
         /// Получает CurveLoop из массива граней
         /// </summary>
         /// <param name="edgeArray">Массив граней</param>
+        /// <param name="zOffset">Смещение линий по Z</param>
         /// <returns>CurveLoop</returns>
-        public static CurveLoop GetCurveLoop(this EdgeArray edgeArray)
+        public static CurveLoop GetCurveLoop(this EdgeArray edgeArray, double zOffset = 0)
         {
-            var curves = edgeArray.OfType<Edge>().Select(e => e.AsCurve()).ToList();
+            var curves = edgeArray.OfType<Edge>().Select(e => e.AsCurve())
+                .Select(i => i.MoveCurve(XYZ.BasisZ, -10 * PluginSettings.OneFt)).ToList();
             var newCurveLoop = new CurveLoop();
             try
             {

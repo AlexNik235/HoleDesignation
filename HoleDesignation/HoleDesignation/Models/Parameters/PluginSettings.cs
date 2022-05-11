@@ -1,5 +1,6 @@
 ﻿namespace HoleDesignation.Models.Parameters
 {
+    using System.Collections.Generic;
     using Autodesk.Revit.DB;
 
     /// <summary>
@@ -20,7 +21,11 @@
         /// <summary>
         /// Категория элементов, которую следуюет игнорировать при создании отверстий
         /// </summary>
-        public static BuiltInCategory IgnorableElementCategory { get; set; } = BuiltInCategory.OST_Windows;
+        public static List<BuiltInCategory> IgnorableElementCategory { get; set; } = new ()
+        {
+            BuiltInCategory.OST_Windows,
+            BuiltInCategory.OST_GenericModel
+        };
 
         /// <summary>
         /// Имя заполняемого параметра для круглого отверстия
@@ -38,14 +43,14 @@
         public static string RectangleSetHeightParamName { get; set; } = "Глубина";
 
         /// <summary>
-        /// Расстояние выдавливания в мм
+        /// Расстояние выдавливания в м
         /// </summary>
         public static double ExtrusionDistance { get; set; } = 1000;
 
         /// <summary>
         /// Один мм в футах
         /// </summary>
-        public static double OneFt { get; set; } = 0.3048;
+        public static double OneFt { get; set; } = 0.003048;
 
         /// <summary>
         /// Погрешность

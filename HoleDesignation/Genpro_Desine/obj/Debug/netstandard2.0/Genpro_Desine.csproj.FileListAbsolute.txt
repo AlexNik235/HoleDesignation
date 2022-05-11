@@ -1,7 +1,0 @@
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.csproj.AssemblyReference.cache
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.Properties.GenproResource.resources
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.csproj.GenerateResource.cache
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.AssemblyInfoInputs.cache
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.AssemblyInfo.cs
-C:\Users\nikitenkoaa\Desktop\Тестовые проекты\HoleDesignation\HoleDesignation\Genpro_Desine\obj\Debug\netstandard2.0\Genpro_Desine.csproj.CoreCompileInputs.cache

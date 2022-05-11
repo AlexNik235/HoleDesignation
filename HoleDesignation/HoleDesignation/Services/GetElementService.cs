@@ -24,10 +24,11 @@
         /// ctor
         /// </summary>
         /// <param name="uiDoc">UIDocument</param>
-        public GetElementService(UIDocument uiDoc)
+        /// <param name="loger">Логер</param>
+        public GetElementService(UIDocument uiDoc, Loger loger)
         {
             _uiDoc = uiDoc;
-            _geometryService = new GeometryService(uiDoc);
+            _geometryService = new GeometryService(uiDoc, loger);
         }
 
         /// <summary>
@@ -153,8 +154,8 @@
                         .WherePasses(new BoundingBoxIntersectsFilter(outLine))
                         .OfType<FamilyInstance>()
                         .Where(instance =>
-                            (BuiltInCategory)instance.Category.Id.IntegerValue ==
-                            PluginSettings.IgnorableElementCategory)
+                            PluginSettings.IgnorableElementCategory.Contains(
+                                (BuiltInCategory)instance.Category.Id.IntegerValue))
                         .Select(i => new WindowModel(i, _geometryService))
                         .ToList();
                 },

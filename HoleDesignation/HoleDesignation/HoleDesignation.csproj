@@ -45,6 +45,11 @@
   <ItemGroup>
     <ProjectReference Include="..\GENPRO_Design\GENPRO_Design.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RevitGeometryExporter">
+      <HintPath>..\..\..\RevitExportGeometryToAutocad\RevitGeometryExporter\bin\Debug\RevitGeometryExporter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup>
     <PackageGuid>41670a3b-f468-42a2-96de-5103d4f339e7</PackageGuid>
     <UpgradeCode>97ea6ffd-9308-4023-9311-7f7085779cd2</UpgradeCode>

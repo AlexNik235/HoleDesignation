@@ -33,3 +33,18 @@ C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\Hol
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.csproj.CopyComplete
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.dll
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\Debug\net472\HoleDesignation.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\HoleDesignation.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\HoleDesignation.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\CSharpFunctionalExtensions.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\GENPRO_Design.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\MaterialDesignColors.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\MaterialDesignThemes.Wpf.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\GENPRO_Design.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\MaterialDesignColors.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\Debug\net472\MaterialDesignThemes.Wpf.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_7a88e2ef-0d16-4adf-a511-eb62db129e65\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_7a88e2ef-0d16-4adf-a511-eb62db129e65\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_b5b9bc05-01d3-4f2b-9f0c-3b00806e6e4e\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_b5b9bc05-01d3-4f2b-9f0c-3b00806e6e4e\bin\HoleDesignation.pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_61511906-86db-452e-abd0-c712ee0a476c\bin\HoleDesignation.dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_61511906-86db-452e-abd0-c712ee0a476c\bin\HoleDesignation.pdb

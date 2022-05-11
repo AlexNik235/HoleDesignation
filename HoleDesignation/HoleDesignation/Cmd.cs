@@ -34,7 +34,7 @@
                 .Match(
                     res =>
                     {
-                        var resultMessage = "Работа плагина завершена.";
+                        var resultMessage = "Работа плагина завершена.\n";
                         if (!string.IsNullOrEmpty(res))
                             resultMessage += res;
                         GenproWindow.Information(resultMessage);

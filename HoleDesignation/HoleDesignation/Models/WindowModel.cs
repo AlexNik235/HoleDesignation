@@ -1,6 +1,7 @@
 ﻿namespace HoleDesignation.Models
 {
     using System;
+    using System.Linq;
     using Autodesk.Revit.DB;
     using Extensions;
     using Parameters;
@@ -33,6 +34,9 @@
         private Solid CreateSolid(
             FamilyInstance familyInstance, GeometryService geometryService, RevitLinkInstance revitLinkInstance)
         {
+            var solid = familyInstance.GetSolid();
+            if (solid != null)
+                return solid;
             var curves = familyInstance.GetCurves(familyInstance.Document.ActiveView, revitLinkInstance);
             var curveLoop = geometryService.GetCurveLoopsFromCurves(curves);
             if (curveLoop == null)

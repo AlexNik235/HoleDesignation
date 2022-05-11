@@ -1,6 +1,7 @@
 ﻿namespace HoleDesignation.Services
 {
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
@@ -19,6 +20,7 @@
         private readonly ValidationService _validationService;
         private readonly GetElementService _getElementService;
         private readonly GeometryService _geometryService;
+        private readonly Loger _loger;
 
         /// <summary>
         /// ctor
@@ -27,9 +29,10 @@
         public HoleDesignationService(UIDocument uiDocument)
         {
             _uiDoc = uiDocument;
+            _loger = new Loger();
             _validationService = new ValidationService(_uiDoc);
-            _getElementService = new GetElementService(_uiDoc);
-            _geometryService = new GeometryService(_uiDoc);
+            _getElementService = new GetElementService(_uiDoc, _loger);
+            _geometryService = new GeometryService(_uiDoc, _loger);
         }
 
         /// <summary>
@@ -75,14 +78,16 @@
             return Result.Try(
                 () =>
                 {
-                    var sb = new StringBuilder();
+                    var errors = new Dictionary<string, int>();
                     var transaction = new Transaction(_uiDoc.Document, "Создание элементов");
                     transaction.Start();
                     foreach (var edgeArray in edgeArrays)
                     {
                         var contourData = _geometryService.GetContourData(edgeArray);
                         if (!contourData.IsValid)
+                        {
                             continue;
+                        }
 
                         FamilySymbol createdFamilySymbol;
                         switch (contourData.Type)
@@ -102,7 +107,7 @@
 
                         if (!SetParameters(contourData, newFamily))
                         {
-                            sb.Append($"\nНе удалось установить значения параметров для элемента {newFamily.Id}");
+                            _loger.AddProblem($"Не удалось установить значения параметров для элемента {newFamily.Id}");
                         }
 
                         var rotationLine = Line.CreateUnbound(contourData.CentralPoint, XYZ.BasisZ);
@@ -110,7 +115,7 @@
                     }
 
                     transaction.Commit();
-                    return sb.ToString();
+                    return _loger.GetConbinatedProblem();
                 }, e => $"При создании элементов возникла непредвиденная ошибка: {e.Message}");
         }
 
