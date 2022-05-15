@@ -1,0 +1,53 @@
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_5f08a4c7-33a7-4b6a-8646-47cec80136d7\bin\LogWindow..dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_5f08a4c7-33a7-4b6a-8646-47cec80136d7\bin\LogWindow..pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\Views\LoggerWindowView.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\GeneratedInternalTypeHelper.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow._MarkupCompile.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow._MarkupCompile.lref
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\Views\DataTemplates\DataTemplateResourceDictionary.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\Views\LoggerWindowView.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow..g.resources
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow..dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\PikTools.LogWindow\obj\x64\Debug\net472\LogWindow..pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_008ee357-64d0-4f7c-aa94-0dc0968fa434\bin\LogWindow..dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_008ee357-64d0-4f7c-aa94-0dc0968fa434\bin\LogWindow..pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\Views\LoggerWindowView.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\GeneratedInternalTypeHelper.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow._MarkupCompile.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow._MarkupCompile.lref
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\Views\DataTemplates\DataTemplateResourceDictionary.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\Views\LoggerWindowView.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow..g.resources
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow..dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleElevation\HoleElevation\LogWindow\obj\x64\Debug\net472\LogWindow..pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_d19ef1fc-49f7-4312-9c58-48cc562d1da0\bin\LogWindow..dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_d19ef1fc-49f7-4312-9c58-48cc562d1da0\bin\LogWindow..pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow.csproj.AssemblyReference.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\Views\LoggerWindowView.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\GeneratedInternalTypeHelper.g.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow._MarkupCompile.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow._MarkupCompile.lref
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\Views\DataTemplates\DataTemplateResourceDictionary.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\Views\LoggerWindowView.baml
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow..g.resources
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow.AssemblyInfoInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow.AssemblyInfo.cs
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow.csproj.CoreCompileInputs.cache
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow.csproj.CopyComplete
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow..dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\LogWindow\obj\x64\Debug\net472\LogWindow..pdb
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_8f11f63f-c58f-40be-a0e5-05415d10477f\bin\LogWindow..dll
+C:\Users\Undea\AppData\Local\Temp\RxBim_build_8f11f63f-c58f-40be-a0e5-05415d10477f\bin\LogWindow..pdb

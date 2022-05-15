@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.LogWindow\\PikTools.LogWindow.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.LogWindow\\PikTools.LogWindow.csproj": {
+      "version": "1.0.5",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.LogWindow\\PikTools.LogWindow.csproj",
+        "projectName": "PikTools.LogWindow",
+        "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.LogWindow\\PikTools.LogWindow.csproj",
+        "packagesPath": "C:\\Users\\Undea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.LogWindow\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Undea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\locaNugets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.Ui\\PikTools.Ui.csproj": {
+                "projectPath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleElevation\\HoleElevation\\PikTools.Ui\\PikTools.Ui.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

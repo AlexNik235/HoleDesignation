@@ -9,6 +9,8 @@
     using Enums;
     using Extensions;
     using Helpers;
+    using LogWindow.Abstractions;
+    using LogWindow.Models;
     using Models;
     using Models.Parameters;
     using Result = CSharpFunctionalExtensions.Result;
@@ -21,14 +23,14 @@
         private const int CountLineInRoundCountur = 2;
         private const int Half = 2;
         private readonly UIDocument _uiDoc;
-        private readonly Loger _loger;
+        private readonly IDisplayLogger _loger;
 
         /// <summary>
         /// ctor
         /// </summary>
         /// <param name="uiDocument">UIDocument</param>
         /// <param name="loger">Логер</param>
-        public GeometryService(UIDocument uiDocument, Loger loger)
+        public GeometryService(UIDocument uiDocument, IDisplayLogger loger)
         {
             _uiDoc = uiDocument;
             _loger = loger;
@@ -66,7 +68,9 @@
                             return true;
                         }
 
-                        _loger.AddProblem("Кол-во линий в контуре не равно 2 или 4, что соотв. круглой и квадратной форме отв.");
+                        _loger.AddMessage(new InfoCountMessage(
+                                "Кол-во линий в контуре не равно 2 или 4, " +
+                                "что соотв. круглой и квадратной форме отв. в количестве", true));
                         return false;
                     })
                 .ToList();
@@ -140,7 +144,8 @@
 
             if (!data.IsValid)
             {
-                _loger.AddProblem($"В прямоугольном контуре нее все грани перпендикулярны");
+                _loger.AddMessage(new InfoCountMessage(
+                    "В прямоугольном контуре нее все грани перпендикулярны в количестве", true));
                 return data;
             }
 
@@ -272,7 +277,7 @@
                 var newSolid =
                     BooleanOperationsUtils.ExecuteBooleanOperation(
                         fistSolid, windowSolid, BooleanOperationsType.Union);
-                var result = Math.Abs(newSolid.Volume - fistSolid.Volume - windowSolid.Volume) > PluginSettings.Tolerance 
+                var result = Math.Abs(newSolid.Volume - fistSolid.Volume - windowSolid.Volume) > PluginSettings.Tolerance
                     && Math.Abs(newSolid.SurfaceArea - fistSolid.SurfaceArea - windowSolid.SurfaceArea) > PluginSettings.Tolerance;
                 return result;
             }

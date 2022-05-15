@@ -8,6 +8,7 @@
     using Autodesk.Revit.UI.Selection;
     using CSharpFunctionalExtensions;
     using Helpers;
+    using LogWindow.Abstractions;
     using Models;
     using Models.Parameters;
     using Result = CSharpFunctionalExtensions.Result;
@@ -25,7 +26,7 @@
         /// </summary>
         /// <param name="uiDoc">UIDocument</param>
         /// <param name="loger">Логер</param>
-        public GetElementService(UIDocument uiDoc, Loger loger)
+        public GetElementService(UIDocument uiDoc, IDisplayLogger loger)
         {
             _uiDoc = uiDoc;
             _geometryService = new GeometryService(uiDoc, loger);

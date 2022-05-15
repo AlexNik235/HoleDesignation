@@ -1,0 +1,195 @@
+﻿<ResourceDictionary
+    mc:Ignorable="d"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:abstractions="clr-namespace:LogWindow.Abstractions"
+    xmlns:helpers="clr-namespace:LogWindow.Views.Helpers"
+    xmlns:models="clr-namespace:LogWindow.Models"
+    xmlns:converters="clr-namespace:LogWindow.Views.Converters">
+
+
+    <SolidColorBrush Color="#BDBDBD" x:Key="SecondBackground" />
+    <SolidColorBrush Color="#4F4F4F" x:Key="SeparatorBackground" />
+    <SolidColorBrush Color="#222d44" x:Key="DarkBlue"/>
+    <SolidColorBrush Color="#F12A66" x:Key="ErrorColor"/>
+    <Style BasedOn="{StaticResource {x:Type TextBox}}" TargetType="TextBox">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="Foreground" Value="{DynamicResource DarkBlue}" />
+        <Setter Property="IsReadOnly" Value="True" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <DataTemplate DataType="{x:Type abstractions:BaseInfoMessage}">
+        <TextBox
+            Margin="36,4,0,4"
+            Padding="0,4"
+            Style="{DynamicResource {x:Type TextBox}}"
+            Text="{Binding ., Mode=OneTime}" />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type abstractions:BaseLinkedElementMessage}">
+        <StackPanel>
+            <StackPanel.Resources>
+                <helpers:BindingProxy Data="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" x:Key="Proxy" />
+            </StackPanel.Resources>
+            <TextBox
+                Margin="0,4,0,4"
+                Padding="0"
+                Style="{DynamicResource {x:Type TextBox}}"
+                Text="{Binding Text, Mode=OneTime}" />
+            <TextBox
+                Margin="32,8,0,8"
+                Padding="0,0,0,0"
+                Style="{DynamicResource {x:Type TextBox}}"
+                Text="{Binding Element, Mode=OneTime}" />
+            <TextBlock Margin="8,8,0,8" Tag="{Binding ElementId}">
+                <Hyperlink Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.SelectedIdCommand}" CommandParameter="{Binding ElementId}">
+                    <Run Text="{Binding ElementId, Mode=OneTime, StringFormat={}{0};}" />
+                </Hyperlink>
+
+                <TextBlock.ContextMenu>
+                    <ContextMenu DataContext="{Binding Path=Data.DataContext, Source={StaticResource Proxy}}">
+                        <MenuItem
+                            Command="{Binding CopyIdCommand}"
+                            CommandParameter="{Binding Path=Parent.PlacementTarget.Tag, RelativeSource={RelativeSource Self}}"
+                            Header="Скопировать Id элемента" />
+                    </ContextMenu>
+                </TextBlock.ContextMenu>
+            </TextBlock>
+            <StackPanel.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsChecked, ElementName=CheckBoxGroup}" Value="True">
+                            <Setter Property="StackPanel.Orientation" Value="Vertical" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsChecked, ElementName=CheckBoxGroup}" Value="False">
+                            <Setter Property="StackPanel.Orientation" Value="Horizontal" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type models:ResultMessage}">
+        <TextBox
+            Background="Transparent"
+            BorderBrush="Transparent"
+            FontSize="14"
+            FontWeight="Medium"
+            Foreground="{DynamicResource DarkBlue}"
+            IsReadOnly="True"
+            Margin="36,4,0,4"
+            Padding="0,4"
+            Text="{Binding ., Mode=OneTime}"
+            TextWrapping="Wrap" />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type models:ErrorMessageMany}">
+        <Expander
+            Background="{DynamicResource SecondBackground}"
+            IsExpanded="False"
+            Padding="0">
+            <Expander.Resources>
+                <helpers:BindingProxy Data="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" x:Key="Proxy" />
+            </Expander.Resources>
+
+            <Expander.Header>
+                <TextBox
+                    Margin="0,4,0,4"
+                    Padding="0"
+                    Style="{DynamicResource {x:Type TextBox}}"
+                    Text="{Binding Title}" />
+            </Expander.Header>
+
+            <ItemsControl ItemsSource="{Binding Path=ElementsList}" x:Name="ItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBox
+                                Margin="32,8,0,8"
+                                Padding="0,0,0,0"
+                                Style="{DynamicResource {x:Type TextBox}}"
+                                Text="{Binding ElementName}" />
+                            <ItemsControl ItemsSource="{Binding Ids}" Width="{Binding Path=ActualWidth, ElementName=ItemsControl, Converter={converters:MathConverter}, ConverterParameter=x-56}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Margin="8,8,0,8" Tag="{Binding .}">
+                                                <Hyperlink Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.SelectedIdCommand}" CommandParameter="{Binding}">
+                                                    <Run Text="{Binding ., Mode=OneWay, StringFormat={}{0};}" />
+                                                </Hyperlink>
+
+                                                <TextBlock.ContextMenu>
+                                                    <ContextMenu DataContext="{Binding Path=Data.DataContext, Source={StaticResource Proxy}}">
+                                                        <MenuItem
+                                                            Command="{Binding CopyIdCommand}"
+                                                            CommandParameter="{Binding Path=Parent.PlacementTarget.Tag, RelativeSource={RelativeSource Self}}"
+                                                            Header="Скопировать Id элемента" />
+                                                    </ContextMenu>
+                                                </TextBlock.ContextMenu>
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            <StackPanel.Style>
+                                <Style>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsChecked, ElementName=CheckBoxGroup}" Value="True">
+                                            <Setter Property="StackPanel.Orientation" Value="Vertical" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding IsChecked, ElementName=CheckBoxGroup}" Value="False">
+                                            <Setter Property="StackPanel.Orientation" Value="Horizontal" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </StackPanel.Style>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Expander>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type models:UnionInfoMessage}">
+        <TextBox
+            Margin="36,4,0,4"
+            Padding="0,4"
+            Style="{DynamicResource {x:Type TextBox}}"
+            Text="{Binding ., Mode=OneTime}" />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type models:CommonErrorMessage}">
+        <Expander
+            Background="{DynamicResource SecondBackground}"
+            IsExpanded="False"
+            Padding="0">
+            <Expander.Header>
+                <TextBox
+                    Margin="0,4,0,4"
+                    Padding="0"
+                    Style="{DynamicResource {x:Type TextBox}}"
+                    Text="{Binding ErrorTitle, Mode=OneTime}"
+                    Foreground="{DynamicResource ErrorColor}"/>
+            </Expander.Header>
+            <TextBox
+                Margin="32,4,0,4"
+                Style="{DynamicResource {x:Type TextBox}}"
+                Text="{Binding ., Mode=OneTime}"/>
+        </Expander>
+    </DataTemplate>
+
+
+</ResourceDictionary>

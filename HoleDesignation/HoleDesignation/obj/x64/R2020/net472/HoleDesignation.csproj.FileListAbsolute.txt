@@ -28,7 +28,12 @@ C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\Hol
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.csproj.CopyComplete
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.dll
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\obj\x64\R2020\net472\HoleDesignation.pdb
-C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\MaterialDesignColors.pdb
-C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\MaterialDesignThemes.Wpf.pdb
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\RevitGeometryExporter.dll
 C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\RevitGeometryExporter.pdb
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\CommonServiceLocator.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\GalaSoft.MvvmLight.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\System.Windows.Interactivity.dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\LogWindow..dll
+C:\Users\Undea\OneDrive\Рабочий стол\WorkProjects\HoleDesignation\HoleDesignation\HoleDesignation\bin\x64\R2020\net472\LogWindow..pdb

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "fz/MUlDIe7sOl3G3KK7R9TcMeRKZnGHQINyolDkSBQfkfU9JwGzpLjOdsh9pUMzRAVarNPWf9HAKhgEoEXoitQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Undea\\OneDrive\\Рабочий стол\\WorkProjects\\HoleDesignation\\HoleDesignation\\LogWindow\\LogWindow.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Undea\\.nuget\\packages\\autodesk.revit.sdk\\2020.2.1\\autodesk.revit.sdk.2020.2.1.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\csharpfunctionalextensions\\2.29.0\\csharpfunctionalextensions.2.29.0.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\mvvmlight\\5.4.1.1\\mvvmlight.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\Undea\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

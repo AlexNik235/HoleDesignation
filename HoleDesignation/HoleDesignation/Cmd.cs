@@ -5,6 +5,7 @@
     using Autodesk.Revit.UI;
     using CSharpFunctionalExtensions;
     using GENPRO_Design.DialogWindow;
+    using LogWindow.Services;
     using Services;
     using Result = Autodesk.Revit.UI.Result;
 
@@ -28,16 +29,19 @@
             ref string message,
             ElementSet elements)
         {
-            var holeDesignationService = new HoleDesignationService(commandData.Application.ActiveUIDocument);
+            var logWindow = new DisplayLogger(commandData.Application);
+            var holeDesignationService = new HoleDesignationService(
+                commandData.Application.ActiveUIDocument, logWindow);
 
             return holeDesignationService.Execute()
                 .Match(
-                    res =>
+                    () =>
                     {
-                        var resultMessage = "Работа плагина завершена.\n";
-                        if (!string.IsNullOrEmpty(res))
-                            resultMessage += res;
-                        GenproWindow.Information(resultMessage);
+                        if (logWindow.HasMessages())
+                        {
+                            logWindow.Show("Отчет");
+                        }
+
                         return Result.Succeeded;
                     },
                     err =>

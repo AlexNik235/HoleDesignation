@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GENPRO_Design\GENPRO_Design.csproj" />
+    <ProjectReference Include="..\LogWindow\LogWindow.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="RevitGeometryExporter">

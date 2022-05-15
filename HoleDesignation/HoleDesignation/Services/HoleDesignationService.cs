@@ -1,12 +1,12 @@
 ﻿namespace HoleDesignation.Services
 {
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
     using CSharpFunctionalExtensions;
     using Enums;
+    using LogWindow.Abstractions;
+    using LogWindow.Models;
     using Models;
     using Models.Parameters;
     using Result = CSharpFunctionalExtensions.Result;
@@ -20,26 +20,27 @@
         private readonly ValidationService _validationService;
         private readonly GetElementService _getElementService;
         private readonly GeometryService _geometryService;
-        private readonly Loger _loger;
+        private readonly IDisplayLogger _displayLogger;
 
         /// <summary>
         /// ctor
         /// </summary>
         /// <param name="uiDocument">UIDocument</param>
-        public HoleDesignationService(UIDocument uiDocument)
+        /// <param name="displayLogger">Логер</param>
+        public HoleDesignationService(UIDocument uiDocument, IDisplayLogger displayLogger)
         {
             _uiDoc = uiDocument;
-            _loger = new Loger();
+            _displayLogger = displayLogger;
             _validationService = new ValidationService(_uiDoc);
-            _getElementService = new GetElementService(_uiDoc, _loger);
-            _geometryService = new GeometryService(_uiDoc, _loger);
+            _getElementService = new GetElementService(_uiDoc, _displayLogger);
+            _geometryService = new GeometryService(_uiDoc, _displayLogger);
         }
 
         /// <summary>
         /// Устанавливает семейство УГО на отверстия
         /// </summary>
         /// <returns>Строку с отчетом</returns>
-        public Result<string> Execute()
+        public Result Execute()
         {
             FamilySymbol roundFamilySymbol = null;
             FamilySymbol rectangleFamilySymbol = null;
@@ -70,7 +71,7 @@
             return result;
         }
 
-        private Result<string> CreateDesignationInstances(
+        private Result CreateDesignationInstances(
             List<EdgeArray> edgeArrays,
             FamilySymbol roundFamily,
             FamilySymbol rectangleFamily)
@@ -107,15 +108,20 @@
 
                         if (!SetParameters(contourData, newFamily))
                         {
-                            _loger.AddProblem($"Не удалось установить значения параметров для элемента {newFamily.Id}");
+                            _displayLogger.AddMessage(
+                                new ErrorMessage(
+                                    "Не удалось установить значения параметров для элемента",
+                                    "ID элемента",
+                                    new CommonBaseObjectId(newFamily.Id.IntegerValue)));
                         }
 
                         var rotationLine = Line.CreateUnbound(contourData.CentralPoint, XYZ.BasisZ);
-                        ElementTransformUtils.RotateElement(_uiDoc.Document, newFamily.Id, rotationLine, contourData.Angle);
+                        ElementTransformUtils.RotateElement(
+                            _uiDoc.Document, newFamily.Id, rotationLine, contourData.Angle);
                     }
 
                     transaction.Commit();
-                    return _loger.GetConbinatedProblem();
+                    return Result.Success();
                 }, e => $"При создании элементов возникла непредвиденная ошибка: {e.Message}");
         }
 
@@ -124,13 +130,13 @@
             switch (contourData.Type)
             {
                 case ContourType.Round:
-                {
-                    var param = familyInstance.LookupParameter(PluginSettings.RoundFamSetParamName);
-                    if (param == null)
-                        return false;
+                    {
+                        var param = familyInstance.LookupParameter(PluginSettings.RoundFamSetParamName);
+                        if (param == null)
+                            return false;
 
-                    return param.Set(contourData.Height / 2);
-                }
+                        return param.Set(contourData.Height / 2);
+                    }
 
                 default:
                     var paramWidth = familyInstance.LookupParameter(PluginSettings.RectangleSetWidthParamName);
